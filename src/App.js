@@ -1,6 +1,12 @@
 import React, { useEffect } from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import Navbar from "./Components/Navbar";
+import Home from "./Components/Home";
+import About from "./Components/About";
+import Service from "./Components/Service";
+import Contact from "./Components/Contact";
 
 function App() {
 
@@ -10,24 +16,22 @@ function App() {
 
   return (
     <div className="App">
-      <div className="container">
-        <h1>Hello World 1</h1>
-      </div>
-      <div data-aos="fade-up" className="container">
-        <h1>Hello World 2</h1>
-      </div>
-      <div data-aos="fade-left" className="container">
-        <h1>Hello World 3</h1>
-      </div>
-      <div data-aos="fade-right" className="container">
-        <h1>Hello World 4</h1>
-      </div>
-      <div data-aos="fade-left" className="container">
-        <h1>Hello World 5</h1>
-      </div>
-      <div data-aos="fade-up" className="container">
-        <h1>Hello World 6</h1>
-      </div>
+      <Router>
+
+        <Navbar />
+        <Routes>
+
+            <Route exact path ="/" element = {<Home />} />
+            
+            <Route exact path ="/about" element = {<About />} />
+      
+            <Route exact path ="/service" element = {<Service />} />
+              
+            <Route exact path ="/contact" element = {<Contact />} />
+               
+        </Routes>
+
+      </Router> 
     </div>
   );
 }
