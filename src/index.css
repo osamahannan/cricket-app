@@ -239,10 +239,42 @@
 
   .us, .opponent {
     display: flex;
-    width: 30vw;
-    height: 25vh;
+    flex-direction: column;
+    width: 35vw;
+    height: 200px;
     margin: 30px 20px;
     background-color: white;
     justify-content: center;
     align-items: center;
+    border-radius: 8px;
+    flex-wrap: wrap;
+  }
+
+  .score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .win, .lose {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    margin: 0 1.5rem;
+  }
+
+  .win img, .lose img {
+    height: 100px;
+    margin: 1rem;
+  }
+
+  .win-score, .lose-score {
+    margin: 1rem;
+  }
+
+  .win-score h2, .lose-score h2 {
+    font-size: 30px;
+    line-height: 30px;
   }
