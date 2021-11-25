@@ -3,6 +3,8 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import winlogo from "../Assets/cricketlogo.png";
 import loselogo from "../Assets/teamlogo.png";
+import loselogo2 from "../Assets/teamlogo2.png";
+import loselogo3 from "../Assets/teamlogo3.png";
 
 const Contact = () => {
 
@@ -25,34 +27,45 @@ const Contact = () => {
                 <div className="match-container">
                     <h1>Last Match Result</h1>
                     <div className="result">
-                        <div className="us">
+                        <div className="last">
                             <time> May 11, 2021 </time>
                             <div className="score">
                                 <div className="win">
                                     <img src={winlogo} alt="winlogo" />
                                     <div className="win-score">
-                                        <h2>162/5</h2>
-                                        <span>17 over</span>
+                                        <h2>80/1</h2>
+                                        <span>6.1 over</span>
                                     </div>
                                 </div>
                                 <div className="lose">
                                     <div className="lose-score">
-                                        <h2>150/7</h2>
-                                        <span>20 over</span>
+                                        <h2>77/5</h2>
+                                        <span>8 over</span>
                                     </div>
                                     <img src={loselogo} alt="winlogo" />
                                 </div>
                             </div>
-                            <span>Annihilators Won by 5 wickets</span>
+                            <span>Annihilators Won by 9 wickets</span>
                         </div>
-                        <div className="opponent">
-                            <time> May 10, 2021 </time>
+                        <div className="second-last">
+                            <time> May 11, 2021 </time>
                             <div className="score">
                                 <div className="win">
-                                    <img src={loselogo} alt="winlogo" />
+                                    <img src={loselogo2} alt="winlogo" />
+                                    <div className="win-score">
+                                        <h2>70/5</h2>
+                                        <span>8 over</span>
+                                    </div>
                                 </div>
-                                <div className="lose"></div>
+                                <div className="lose">
+                                    <div className="lose-score">
+                                        <h2>71/2</h2>
+                                        <span>6 over</span>
+                                    </div>
+                                    <img src={loselogo3} alt="winlogo" />
+                                </div>
                             </div>
+                            <span>Annihilators Won by 8 wickets</span>
                         </div>
                     </div>
                 </div>

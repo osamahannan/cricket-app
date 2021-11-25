@@ -237,7 +237,7 @@
     flex-wrap: wrap;
   }
 
-  .us, .opponent {
+  .last, .second-last {
     display: flex;
     flex-direction: column;
     width: 35vw;
