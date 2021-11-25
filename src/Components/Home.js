@@ -2,8 +2,8 @@ import React, { useEffect } from 'react'
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-const Contact = () => {     
-    
+const Contact = () => {
+
     useEffect(() => {
         Aos.init({ duration: 1000, once: true })
     }, []);
@@ -19,14 +19,16 @@ const Contact = () => {
 
                 </div>
             </div>
-            <div className="match-container">
-                <h1>Last Match Result</h1>
-                <div className="result">
-                    <div className="us">
-                        <h1>Annihilators</h1>
-                    </div>
-                    <div className="opponent">
-                    <h1>Opponent</h1>
+            <div className="parent">
+                <div className="match-container">
+                    <h1>Last Match Result</h1>
+                    <div className="result">
+                        <div className="us">
+                            <h2>Annihilators</h2>
+                        </div>
+                        <div className="opponent">
+                            <h2>Opponent</h2>
+                        </div>
                     </div>
                 </div>
             </div>
