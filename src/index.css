@@ -1,28 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Dancing+Script:wght@700&family=Pacifico&display=swap");
+
 * {
   margin: 0;
   padding: 0;
+  font-family: "Baloo Bhai 2", cursive;
 }
 
-.App {
+/* .App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+} */
+
+/* Header */
+
+.header {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Raleway', sans-serif;
+}
+
+.welcome {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-around;
+ align-items: center;
+ background-color: gray;
+ color: white;
+ padding: 8px;
+}
+
+.heading {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-container {
+  display: flex;
+}
+
+.social {
+  font-size: 1.3rem;
+  margin: 0 15px;
+  color: white;
+}
+
+.social:hover {
+  color: rgb(30, 180, 180);
+}
+
+.service-center-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 125px;
+}
+
+.service-center {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  /* width: 100vw; */
-  /* height: 100vh; */
-  /* border: 1px solid black; */
-  overflow: hidden;
 }
 
-.container {
+.service-center h2 {
+  color: grey;
+}
+
+.service {
+  color: rgb(35, 139, 224);
+}
+
+.center {
+  color: red;
+}
+
+.phone-mail {
   display: flex;
-  position: relative;
-  width: 800px;
-  height: 330px;
-  margin-top: 20px;
-  background-color: rgb(122, 236, 236);
-  border-radius: 12px;
-  justify-content: center; 
+  justify-content: space-between;
+  align-items: center;
+  width: 27vw;
+}
+
+.phone {
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
+.telephone {
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+.email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.email-icon {
+  font-size: 40px;
+  color: red;
+}
+
+.gmail {
+  margin-left: 10px;
+}
+
+
+/* Navbar */
+
+.navbar {
+  display: flex;
+  position: sticky;
+  top: 0%;
+  z-index: 1;
+  background-color: white;
+  padding: 5px;
+  height: 70px;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(204, 201, 201);
+  border-top: 1px solid rgb(204, 201, 201);
+}
+
+.logo {
+  margin-left: 10px;
+}
+
+.osamahannan {
+  text-decoration: none;
+  color: rgb(30, 180, 180);
+  font-size: 17px;
+  font-family: "Dancing Script", cursive;
+  font-family: "Pacifico", cursive;
+  border: 1px solid;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar ul li {
+  list-style: none;
+  margin: 0 5px;
+}
+
+.navbar ul li a {
+  padding: 5px 12px;
+  text-decoration: none;
+  color: rgb(138, 138, 138);
+  font-size: 18px;
+}
+
+.navbar ul li a:hover {
+  color: black;
+}
+
+/* home */ 
+
+ .home {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .welcome-box {
+   display: flex;
+   align-items: center;
+   width: 100%;
+   height: 100vh;
+   background-image: url(./Assets/cricket.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+ }
+
+ .bat-ball {
+  width: 40vw;
+  margin: 5rem 0 0 3rem;
+}
+
+.bat-ball h1 {
+  font-size: 3rem;
+  line-height: 4rem;
+  color: white;
+}
+
+.bat-ball p {
+  color: white;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
+
+.btn {
+  padding: 10px 25px;
+  margin-top: 2rem;
+  background-color: rgb(43, 128, 238);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+ .match-container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   border: 1px solid red;
+  }
+
+  .result {
+    display: flex;
+    justify-content: space-around;
+  }
