@@ -6,6 +6,7 @@ import About from "./Components/About";
 import Team from "./Components/Team";
 import Contact from "./Components/Contact";
 import Header from "./Components/Header";
+import Footer from "./Components/Footer";
 
 function App() {
 
@@ -28,6 +29,8 @@ function App() {
             <Route exact path ="/contact" element = {<Contact />} />
                
         </Routes>
+
+        <Footer />
 
       </Router> 
     </div>

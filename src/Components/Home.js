@@ -22,7 +22,7 @@ const Contact = () => {
                         A contract can make you rich.<br/>
                         The press can make you a superstar.<br/>
                         But only love can make you a player.</p>
-                    <a href="https://www.sportsfeelgoodstories.com/cricket-slogans-sayings-and-mottos/"><button className="btn">View More</button></a>
+                    <a href="https://www.sportsfeelgoodstories.com/cricket-slogans-sayings-and-mottos/" ><button className="btn">View More</button></a>
 
                 </div>
             </div>
@@ -86,6 +86,18 @@ const Contact = () => {
 
                             It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years.</p>
                         <div><button className="btn">READ MORE</button></div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="testimonial">
+                <h1>Testimonials From Our Players</h1>
+                <div className="player-content">
+                    <div className="player1">
+                        Minhaj Ahmed Khan
+                    </div>
+                    <div className="player2">
+                        Osama Hannan
                     </div>
                 </div>
             </div>
