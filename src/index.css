@@ -415,4 +415,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 60vh;
+  background-color: #06083B;
+  color: white;
 }

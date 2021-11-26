@@ -2,10 +2,10 @@ import React, { useEffect } from 'react'
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { FaQuoteLeft } from "react-icons/fa";
-import winlogo from "../Assets/teamlogo3.png";
-import loselogo from "../Assets/teamlogo2.png";
+import loselogo from "../Assets/teamlogo1.png";
+import winlogo from "../Assets/teamlogo2.png";
+import loselogo2 from "../Assets/teamlogo3.png";
 import cricketbg from "../Assets/cricketbg.jpg";
-import comma from "../Assets/comma.png";
 
 const Contact = () => {
 
@@ -68,7 +68,7 @@ const Contact = () => {
                                         <h2>70/5</h2>
                                         <span>8 over</span>
                                     </div>
-                                    <img src={loselogo} alt="winlogo" />
+                                    <img src={loselogo2} alt="winlogo" />
                                 </div>
                             </div>
                             <span>Annihilators Won by 8 wickets</span>
@@ -95,14 +95,14 @@ const Contact = () => {
             <div className="testimonial" data-aos="fade-up">
                 <h1>Testimonials From Our Players</h1>
                 <div className="player-content">
-                    <div className="player1">
+                    <div className="player1" data-aos="fade-right">
                         <FaQuoteLeft className="quote" />
                         <p>Thank you for letting me be a part of such a fantastic team! Being a captain for this team is much more than just work, it’s an unforgettable experience that will stay with me for the rest of my life.</p>
                         <div className="player-name">
                             <h3>Minhaj Ahmad Khan &nbsp;</h3><span>/ Captain</span>
                         </div>
                     </div>
-                    <div className="player2">
+                    <div className="player2" data-aos="fade-left">
                         <FaQuoteLeft className="quote" />
                         <p>Thank you for letting me be a part of such a fantastic team! Being a vice-captain for this team is much more than just work, it’s an unforgettable experience that will stay with me for the rest of my life.</p>
                         <div className="player-name">
