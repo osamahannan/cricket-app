@@ -1,9 +1,11 @@
 import React, { useEffect } from 'react'
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { FaQuoteLeft } from "react-icons/fa";
 import winlogo from "../Assets/teamlogo3.png";
 import loselogo from "../Assets/teamlogo2.png";
 import cricketbg from "../Assets/cricketbg.jpg";
+import comma from "../Assets/comma.png";
 
 const Contact = () => {
 
@@ -18,9 +20,9 @@ const Contact = () => {
             <div className="welcome-box" data-aos="fade-up">
                 <div className="bat-ball">
                     <h1>Cricket is the most wonderful entertainment in the world</h1>
-                    <p>The fans can make you famous.<br/>
-                        A contract can make you rich.<br/>
-                        The press can make you a superstar.<br/>
+                    <p>The fans can make you famous.<br />
+                        A contract can make you rich.<br />
+                        The press can make you a superstar.<br />
                         But only love can make you a player.</p>
                     <a href="https://www.sportsfeelgoodstories.com/cricket-slogans-sayings-and-mottos/" ><button className="btn">View More</button></a>
 
@@ -90,14 +92,22 @@ const Contact = () => {
                 </div>
             </div>
 
-            <div className="testimonial">
+            <div className="testimonial" data-aos="fade-up">
                 <h1>Testimonials From Our Players</h1>
                 <div className="player-content">
                     <div className="player1">
-                        Minhaj Ahmed Khan
+                        <FaQuoteLeft className="quote" />
+                        <p>Thank you for letting me be a part of such a fantastic team! Being a captain for this team is much more than just work, it’s an unforgettable experience that will stay with me for the rest of my life.</p>
+                        <div className="player-name">
+                            <h3>Minhaj Ahmad Khan &nbsp;</h3><span>/ Captain</span>
+                        </div>
                     </div>
                     <div className="player2">
-                        Osama Hannan
+                        <FaQuoteLeft className="quote" />
+                        <p>Thank you for letting me be a part of such a fantastic team! Being a vice-captain for this team is much more than just work, it’s an unforgettable experience that will stay with me for the rest of my life.</p>
+                        <div className="player-name">
+                            <h3>Osama Hannan &nbsp;</h3><span>/ Vice Captain</span>
+                        </div>
                     </div>
                 </div>
             </div>

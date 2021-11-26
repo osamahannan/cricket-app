@@ -270,7 +270,7 @@
   }
 
   .win:hover .win-score h2, .lose:hover .lose-score h2 {
-    color: #f8c83a;
+    color: #e7bb38;
     transition: 0.5s all ease;
   }
 
@@ -360,12 +360,12 @@
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 85vh;
+  height: 90vh;
   color: white;
 }
 
 .testimonial h1 {
-  font-size: 2.7rem;
+  font-size: 3rem;
   /* color: pink; */
 }
 
@@ -374,15 +374,39 @@
   margin-top: 1rem;
 }
 
+.quote {
+  font-size: 4rem;
+  color: #e7bb38;
+  filter: drop-shadow(2px 4px 4px black);
+}
+
 .player1, .player2 {
   display: flex;
+  flex-direction: column;
   margin: 1rem;
   width: 550px;
   height: 350px;
   background-color: white;
   color: black;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.player-content p {
+  color: grey;
+  margin: 0 3rem;
+  text-align: center;
+}
+
+.player-name {
+  display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 1.4rem;
+}
+
+.player-name span {
+  color: grey;
 }
 
 /* Footer section */ 
