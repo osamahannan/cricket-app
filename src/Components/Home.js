@@ -23,11 +23,11 @@ const Contact = () => {
 
                 </div>
             </div>
-            <div className="parent">
+            <div className="parent" data-aos="fade-up">
                 <div className="match-container">
                     <h1>Last Match Result</h1>
                     <div className="result">
-                        <div className="last">
+                        <div className="last" data-aos="fade-right">
                             <time> May 11, 2021 </time>
                             <div className="score">
                                 <div className="win">
@@ -47,22 +47,22 @@ const Contact = () => {
                             </div>
                             <span>Annihilators Won by 9 wickets</span>
                         </div>
-                        <div className="second-last">
+                        <div className="second-last" data-aos="fade-left">
                             <time> May 11, 2021 </time>
                             <div className="score">
-                                <div className="win">
-                                    <img src={loselogo2} alt="winlogo" />
-                                    <div className="win-score">
-                                        <h2>70/5</h2>
-                                        <span>8 over</span>
-                                    </div>
-                                </div>
                                 <div className="lose">
+                                    <img src={loselogo3} alt="winlogo" />
                                     <div className="lose-score">
                                         <h2>71/2</h2>
                                         <span>6 over</span>
                                     </div>
-                                    <img src={loselogo3} alt="winlogo" />
+                                </div>
+                                <div className="win">
+                                    <div className="win-score">
+                                        <h2>70/5</h2>
+                                        <span>8 over</span>
+                                    </div>
+                                    <img src={loselogo2} alt="winlogo" />
                                 </div>
                             </div>
                             <span>Annihilators Won by 8 wickets</span>
