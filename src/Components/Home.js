@@ -18,8 +18,11 @@ const Contact = () => {
             <div className="welcome-box" data-aos="fade-up">
                 <div className="bat-ball">
                     <h1>Cricket is the most wonderful entertainment in the world</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptas quidem voluptate, facere, beatae dolor .</p>
-                    <button className="btn">View More</button>
+                    <p>The fans can make you famous.<br/>
+                        A contract can make you rich.<br/>
+                        The press can make you a superstar.<br/>
+                        But only love can make you a player.</p>
+                    <a href="https://www.sportsfeelgoodstories.com/cricket-slogans-sayings-and-mottos/"><button className="btn">View More</button></a>
 
                 </div>
             </div>
@@ -73,7 +76,7 @@ const Contact = () => {
             </div>
 
             <div className="about-section">
-                <div className="about-container">
+                <div className="about-container" data-aos="fade-up">
                     <div className="image_section">
                         <img src={cricketbg} alt="stadium background" />
                     </div>
@@ -81,7 +84,7 @@ const Contact = () => {
                         <h1>About Us</h1>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 
-                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years.</p>
+                            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years.</p>
                         <div><button className="btn">READ MORE</button></div>
                     </div>
                 </div>
