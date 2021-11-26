@@ -353,6 +353,7 @@
 .testimonial {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   background: url("./Assets/testimonial_bg.jpg");
   background-position: center;
@@ -363,8 +364,25 @@
   color: white;
 }
 
+.testimonial h1 {
+  font-size: 2.7rem;
+  /* color: pink; */
+}
+
 .player-content {
   display: flex;
+  margin-top: 1rem;
+}
+
+.player1, .player2 {
+  display: flex;
+  margin: 1rem;
+  width: 550px;
+  height: 350px;
+  background-color: white;
+  color: black;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Footer section */ 
