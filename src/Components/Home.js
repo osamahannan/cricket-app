@@ -6,7 +6,6 @@ import loselogo from "../Assets/teamlogo1.png";
 import winlogo from "../Assets/teamlogo2.png";
 import loselogo2 from "../Assets/teamlogo3.png";
 import cricketbg from "../Assets/cricketbg.jpg";
-import team1 from "../Assets/team1.png";
 import team2 from "../Assets/team2.png";
 import team3 from "../Assets/team3.png";
 import team4 from "../Assets/team4.png";
@@ -14,7 +13,7 @@ import team5 from "../Assets/team5.png";
 import team6 from "../Assets/team6.png";
 import team7 from "../Assets/team7.png";
 
-const Contact = () => {
+const Home = () => {
 
     useEffect(() => {
         Aos.init({ duration: 1000, once: true })
@@ -119,17 +118,17 @@ const Contact = () => {
                 </div>
             </div>
 
-            <div className="opponent-teams">
+            <div className="opponent-teams" data-aos="fade-up">
                 <h1>Our Opponent Teams</h1>
                 <div className="logo-section">
-                    <div className="logos"><img src={team6} alt="team_logo 1" /></div>
-                    <div className="logos"><img src={team2} alt="team_logo 2" /></div>
-                    <div className="logos"><img src={team3} alt="team_logo 3" /></div>
-                    <div className="logos"><img src={team4} alt="team_logo 4" /></div>
-                    <div className="logos"><img src={team5} alt="team_logo 5" /></div>
-                    <div className="logos"><img src={loselogo} alt="team_logo 6" /></div>
-                    <div className="logos"><img src={loselogo2} alt="team_logo 7" /></div>
-                    <div className="logos"><img src={team7} alt="team_logo 8" /></div>
+                    <div className="logos" data-aos="flip-right"><img src={team6} alt="team_logo 1" /></div>
+                    <div className="logos" data-aos="flip-right"><img src={team2} alt="team_logo 2" /></div>
+                    <div className="logos" data-aos="flip-right"><img src={team3} alt="team_logo 3" /></div>
+                    <div className="logos" data-aos="flip-right"><img src={team4} alt="team_logo 4" /></div>
+                    <div className="logos" data-aos="flip-left"><img src={team5} alt="team_logo 5" /></div>
+                    <div className="logos" data-aos="flip-left"><img src={loselogo} alt="team_logo 6" /></div>
+                    <div className="logos" data-aos="flip-left"><img src={loselogo2} alt="team_logo 7" /></div>
+                    <div className="logos" data-aos="flip-left"><img src={team7} alt="team_logo 8" /></div>
                 </div>
             </div>
 
@@ -137,4 +136,4 @@ const Contact = () => {
     )
 }
 
-export default Contact
+export default Home
