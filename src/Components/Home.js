@@ -6,6 +6,11 @@ import loselogo from "../Assets/teamlogo1.png";
 import winlogo from "../Assets/teamlogo2.png";
 import loselogo2 from "../Assets/teamlogo3.png";
 import cricketbg from "../Assets/cricketbg.jpg";
+import team1 from "../Assets/team1.png";
+import team2 from "../Assets/team2.png";
+import team3 from "../Assets/team3.png";
+import team4 from "../Assets/team4.png";
+import team5 from "../Assets/team5.png";
 
 const Contact = () => {
 
@@ -109,6 +114,20 @@ const Contact = () => {
                             <h3>Osama Hannan &nbsp;</h3><span>/ Vice Captain</span>
                         </div>
                     </div>
+                </div>
+            </div>
+
+            <div className="opponent-teams">
+                <h1>Our Opponent Teams</h1>
+                <div className="logos">
+                    <img src={team1} alt="team_logo 1" />
+                    <img src={team2} alt="team_logo 2" />
+                    <img src={team3} alt="team_logo 3" />
+                    <img src={team4} alt="team_logo 4" />
+                    <img src={team5} alt="team_logo 5" />
+                    <img src={loselogo} alt="team_logo 6" />
+                    <img src={loselogo2} alt="team_logo 7" />
+                    <img src={winlogo} alt="team_logo 8" />
                 </div>
             </div>
 
