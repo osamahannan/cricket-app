@@ -384,7 +384,7 @@
   display: flex;
   flex-direction: column;
   margin: 1rem;
-  width: 550px;
+  width: 38vw;
   height: 350px;
   background-color: white;
   color: black;
@@ -425,8 +425,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  width: 100%;
+  justify-content: space-around;
   background-color: rgb(248, 246, 246);
+  height: 1000px;
 }
 
 .opponent-teams h1 {
@@ -442,18 +444,39 @@
   margin-bottom: 3rem;
 }
 
-.logos {
+.column {
   display: flex;
-  justify-content: center;
-  width: 20vw;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin: 1rem;
-  background-color: white;
+  height: 55vh;
 }
 
-.logo-section img {
+.logos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 18vw;
+  height: 45vh;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 1rem 1.5rem;
+  background-color: white;
+  transition: 0.3s ease-in-out;
+}
+
+.logos:hover {
+  cursor: pointer;
+  transform: translateY(-5px);
+  border-bottom: 7px solid #06083B;
+  box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.2), 0 20px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.logo-section img, .logo-section img {
   height: 150px;
   margin: 2rem 1rem;
+}
+
+.logo-section h2, .logo-section h2 {
+  margin-bottom: 2rem;
+  color: #06083B;
 }
 
 /* Footer section */ 

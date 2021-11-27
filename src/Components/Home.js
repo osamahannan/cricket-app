@@ -121,14 +121,54 @@ const Home = () => {
             <div className="opponent-teams" data-aos="fade-up">
                 <h1>Our Opponent Teams</h1>
                 <div className="logo-section">
-                    <div className="logos" data-aos="flip-right"><img src={team6} alt="team_logo 1" /></div>
-                    <div className="logos" data-aos="flip-right"><img src={team2} alt="team_logo 2" /></div>
-                    <div className="logos" data-aos="flip-right"><img src={team3} alt="team_logo 3" /></div>
-                    <div className="logos" data-aos="flip-right"><img src={team4} alt="team_logo 4" /></div>
-                    <div className="logos" data-aos="flip-left"><img src={team5} alt="team_logo 5" /></div>
-                    <div className="logos" data-aos="flip-left"><img src={loselogo} alt="team_logo 6" /></div>
-                    <div className="logos" data-aos="flip-left"><img src={loselogo2} alt="team_logo 7" /></div>
-                    <div className="logos" data-aos="flip-left"><img src={team7} alt="team_logo 8" /></div>
+                    <div className="column" data-aos="flip-right">
+                        <div className="logos" >
+                            <img src={team6} alt="team_logo 1" />
+                            <h2>The Tyrants</h2>
+                        </div>
+                    </div>
+                    <div className="column" data-aos="flip-right">
+                        <div className="logos">
+                            <img src={team2} alt="team_logo 2" />
+                            <h2>The Supernovas</h2>
+                        </div>
+                    </div>
+                    <div className="column" data-aos="flip-left">
+                        <div className="logos">
+                            <img src={team3} alt="team_logo 3" />
+                            <h2>The Go Getters</h2>
+                        </div>
+                    </div>
+                    <div className="column" data-aos="flip-left">
+                        <div className="logos" >
+                            <img src={team4} alt="team_logo 4" />
+                            <h2>Batting Divas</h2>
+                        </div>
+                    </div>
+                    <div className="column" data-aos="flip-right">
+                        <div className="logos">
+                            <img src={team5} alt="team_logo 5" />
+                            <h2>The Outsiders</h2>
+                        </div>
+                    </div>
+                    <div className="column" data-aos="flip-right">
+                        <div className="logos">
+                            <img src={loselogo} alt="team_logo 6" />
+                            <h2>The Guardians</h2>
+                        </div>
+                    </div>
+                    <div className="column" data-aos="flip-left">
+                        <div className="logos">
+                            <img src={loselogo2} alt="team_logo 7" />
+                            <h2>The Avengers</h2>
+                        </div>
+                    </div>
+                    <div className="column" data-aos="flip-left">
+                        <div className="logos">
+                            <img src={team7} alt="team_logo 8" />
+                            <h2>UP Stars</h2>
+                        </div>
+                    </div>
                 </div>
             </div>
 
