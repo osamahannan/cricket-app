@@ -4,7 +4,6 @@ import Navbar from "./Components/Navbar";
 import Home from "./Components/Home";
 import Fund from "./Components/Fund";
 import Team from "./Components/Team";
-import Contact from "./Components/Contact";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 
@@ -25,9 +24,7 @@ function App() {
             <Route exact path ="/funds" element = {<Fund />} />
       
             <Route exact path ="/team" element = {<Team />} />
-              
-            <Route exact path ="/contact" element = {<Contact />} />
-               
+                             
         </Routes>
 
         <Footer />
