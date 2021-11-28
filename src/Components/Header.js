@@ -29,7 +29,7 @@ const Header = () => {
                 <div className="phone-mail">
                     <div className="phone">
                         <BsFillTelephoneFill className="telephone"/>
-                        <h4>18001025170</h4>
+                        <a href="tel:8181007105" cm_dontconvertlink>8181007105</a>
                     </div>
                     <div className="email">
                         <MdEmail className="email-icon"/>

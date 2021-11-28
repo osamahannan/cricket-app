@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from "react-router-dom";
-import logopic from "../Assets/Annihilator_logo1.png";
+import logopic from "../Assets/Annihilators3.png";
 
 const Navbar = () => {
     return (

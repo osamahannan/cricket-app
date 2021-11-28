@@ -43,7 +43,7 @@
 }
 
 .social:hover {
-  color: rgb(30, 180, 180);
+  color: #e7bb38;
 }
 
 .service-center-container {
@@ -83,6 +83,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.phone a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+}
+
+.phone a:hover {
+  color: #e7bb38;
 }
 
 .telephone {
@@ -136,7 +147,7 @@
 }
 
 .osamahannan img {
-  height: 300px;
+  height: 55px;
 }
 
 .navbar ul {
@@ -182,20 +193,20 @@
  }
 
  .bat-ball {
-  width: 40vw;
-  margin: 5rem 0 0 3rem;
+  width: 35vw;
+  margin: 0 0 0 3rem;
 }
 
 .bat-ball h1 {
-  font-size: 3rem;
-  line-height: 4rem;
+  font-size: 2.5rem;
+  line-height: 3.3rem;
   color: white;
 }
 
 .bat-ball p {
   color: white;
   font-size: 1.1rem;
-  margin-top: 1rem;
+  margin: 2rem 0 1rem 0;
 }
 
 .btn {
@@ -366,7 +377,6 @@
 
 .testimonial h1 {
   font-size: 3rem;
-  /* color: pink; */
 }
 
 .player-content {
@@ -394,7 +404,7 @@
 
 .player1:hover .player-name h3, .player1:hover .player-name span {
   color: #e7bb38;
-  transition: 0.5s all ease;
+  transition: 0.3s all ease;
 }
 
 .player2:hover .player-name h3, .player2:hover .player-name span {
@@ -459,13 +469,13 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin: 1rem 1.5rem;
   background-color: white;
-  transition: 0.3s ease-in-out;
+  transition: 0.5s all ease;
 }
 
 .logos:hover {
   cursor: pointer;
   transform: translateY(-5px);
-  border-bottom: 7px solid #06083B;
+  border-bottom: 5px solid #06083B;
   box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.2), 0 20px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -485,7 +495,87 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60vh;
+  height: 50vh;
   background-color: #06083B;
   color: white;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  /* border: 1px solid white; */
+}
+
+.team11 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 20vw;
+  height: 25vh;
+  /* border: 1px solid white; */
+  margin: 0 50px;
+}
+
+.team11 img {
+  height: 50px;
+  /* border: 1px solid white; */
+}
+
+.team11 p {
+  text-align: center;
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* border: 1px solid white; */
+  margin: 0 50px;
+  width: 300px;
+}
+
+.footer-heading {
+  display: flex;
+  margin-left: 17px;
+}
+
+.cont {
+  border-bottom: 3px solid #e7bb38;
+}
+
+/* .footer-contact h1 {
+  margin-left: 17px;
+  border-bottom: 3px solid white;
+} */
+
+.footer-icons {
+  display: flex;
+  align-items: center;
+  margin: 5px;
+}
+
+.footericon {
+  font-size: 22px;
+  margin: 10px;
+}
+
+.homeicon {
+  font-size: 37px;
+  margin: 10px;
+}
+
+.copyright {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 18px;
+  /* border: 1px solid white; */
+  margin: 0 50px;
+}
+
+.copyright span {
+  margin-bottom: 20px;
 }

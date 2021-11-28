@@ -123,7 +123,7 @@ const Home = () => {
                 <div className="logo-section">
                     <div className="column" data-aos="flip-right">
                         <div className="logos" >
-                            <img src={team6} alt="team_logo 1" />
+                            <img src={loselogo} alt="team_logo 1" />
                             <h2>The Tyrants</h2>
                         </div>
                     </div>
@@ -147,13 +147,13 @@ const Home = () => {
                     </div>
                     <div className="column" data-aos="flip-right">
                         <div className="logos">
-                            <img src={team5} alt="team_logo 5" />
-                            <h2>The Outsiders</h2>
+                            <img src={team7} alt="team_logo 5" />
+                            <h2>UP Stars</h2>
                         </div>
                     </div>
                     <div className="column" data-aos="flip-right">
                         <div className="logos">
-                            <img src={loselogo} alt="team_logo 6" />
+                            <img src={team5} alt="team_logo 6" />
                             <h2>The Guardians</h2>
                         </div>
                     </div>
@@ -165,8 +165,8 @@ const Home = () => {
                     </div>
                     <div className="column" data-aos="flip-left">
                         <div className="logos">
-                            <img src={team7} alt="team_logo 8" />
-                            <h2>UP Stars</h2>
+                            <img src={team6} alt="team_logo 8" />
+                            <h2>The Outsiders</h2>
                         </div>
                     </div>
                 </div>
