@@ -473,7 +473,7 @@
   transition: 0.5s all ease;
 }
 
-.logos:hover {
+.logos:hover, .player-card:hover {
   cursor: pointer;
   transform: translateY(-5px);
   border-bottom: 5px solid #06083B;
@@ -590,13 +590,24 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  margin: 3rem 0 3rem 0;
 }
 
 .player-card {
   justify-content: space-around;
   background-color: rgb(248, 246, 246);
-  height: 35vh;
-  width: 15vw;
+  height: 255px;
+  width: 230px;
+  cursor: pointer;
+}
+
+.player-card:hover {
+  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.2), 0 20px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-container {
+  display: flex;
+  height: 300px;
 }
 
 .profile {
