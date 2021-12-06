@@ -574,6 +574,9 @@
 /* OurTeam Section */
 
 .team-intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: url("./Assets/cricketbackg.jpg");
   background-position: center;
   background-repeat: no-repeat;
