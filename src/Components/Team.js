@@ -42,7 +42,7 @@ const Team = () => {
                     <div className="profile">
                         <img src={intzarpic} alt="Intzar" />
                     </div>
-                    <span className="player-card-name">Mohammad Intzar Khan</span>
+                    <span className="player-card-name">Intzar Khan</span>
                 </div>
                 <div className="player-card">
                     <div className="profile">
@@ -54,55 +54,55 @@ const Team = () => {
                     <div className="profile">
                         <img src={dummypic} alt="dummypic" />
                     </div>
-                    <span className="player-card-name">Osama Hannan</span>
+                    <span className="player-card-name">Shahbaz Ahmad Khan</span>
                 </div>
                 <div className="player-card">
                     <div className="profile">
                         <img src={dummypic} alt="dummypic" />
                     </div>
-                    <span className="player-card-name">Osama Hannan</span>
+                    <span className="player-card-name">Asad Raiyan</span>
                 </div>
                 <div className="player-card">
                     <div className="profile">
                         <img src={dummypic} alt="dummypic" />
                     </div>
-                    <span className="player-card-name">Osama Hannan</span>
+                    <span className="player-card-name">Arif Bhai</span>
                 </div>
                 <div className="player-card">
                     <div className="profile">
                         <img src={dummypic} alt="dummypic" />
                     </div>
-                    <span className="player-card-name">Osama Hannan</span>
+                    <span className="player-card-name">Sheebu</span>
                 </div>
                 <div className="player-card">
                     <div className="profile">
                         <img src={dummypic} alt="dummypic" />
                     </div>
-                    <span className="player-card-name">Osama Hannan</span>
+                    <span className="player-card-name">Imran Khan</span>
                 </div>
                 <div className="player-card">
                     <div className="profile">
                         <img src={dummypic} alt="dummypic" />
                     </div>
-                    <span className="player-card-name">Osama Hannan</span>
+                    <span className="player-card-name">Shareef</span>
                 </div>
                 <div className="player-card">
                     <div className="profile">
                         <img src={dummypic} alt="dummypic" />
                     </div>
-                    <span className="player-card-name">Osama Hannan</span>
+                    <span className="player-card-name">Atif Shaikh</span>
                 </div>
                 <div className="player-card">
                     <div className="profile">
                         <img src={dummypic} alt="dummypic" />
                     </div>
-                    <span className="player-card-name">Osama Hannan</span>
+                    <span className="player-card-name">Sajid</span>
                 </div>
                 <div className="player-card">
                     <div className="profile">
                         <img src={dummypic} alt="dummypic" />
                     </div>
-                    <span className="player-card-name">Osama Hannan</span>
+                    <span className="player-card-name">Arif</span>
                 </div>
             </div>
         </div>
