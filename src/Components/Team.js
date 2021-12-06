@@ -139,7 +139,7 @@ const Team = () => {
                         <div className="profile">
                             <img src={dummypic} alt="dummypic" />
                         </div>
-                        <span className="player-card-name">Atif Shaikh</span>
+                        <span className="player-card-name">Arif Bhai</span>
                     </div>
                 </div>
             </div>

@@ -185,7 +185,7 @@
    display: flex;
    align-items: center;
    width: 100%;
-   height: 100vh;
+   height: 800px;
    background-image: url(./Assets/cricket.jpg);
    background-position: center;
    background-repeat: no-repeat;
@@ -344,6 +344,7 @@
 .image_section img {
   height: 100%;
   width: 100%;
+  margin-left: 2rem;
 }
 
 .about {
@@ -351,7 +352,7 @@
   justify-content: center;
   width: 500px;
   flex-direction: column;
-  margin-left: 2.5rem;
+  margin: 0 2rem 0 2.5rem;
 }
 
 .about h1 {
@@ -371,7 +372,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 90vh;
+  height: 600px;
   color: white;
 }
 
@@ -465,8 +466,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 18vw;
-  height: 45vh;
+  width: 275px;
+  height: 325px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin: 1rem 1.5rem;
   background-color: white;
@@ -625,4 +626,10 @@
 .player-card-name {
   font-size: 1.2rem;
   margin-bottom: 10px;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 1100px) {
+  
 }
