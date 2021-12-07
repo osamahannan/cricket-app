@@ -2,16 +2,16 @@ import React, { useEffect } from 'react'
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { FaQuoteLeft } from "react-icons/fa";
-import loselogo from "../Assets/teamlogo1.png";
-import winlogo from "../Assets/teamlogo2.png";
-import loselogo2 from "../Assets/teamlogo3.png";
 import cricketbg from "../Assets/cricketbg.jpg";
-import team2 from "../Assets/team2.png";
-import team3 from "../Assets/team3.png";
-import team4 from "../Assets/team4.png";
-import team5 from "../Assets/team5.png";
-import team6 from "../Assets/team6.png";
-import team7 from "../Assets/team7.png";
+import loselogo from "../Assets/Opponent logos/teamlogo1.png";
+import winlogo from "../Assets/Opponent logos/teamlogo2.png";
+import loselogo2 from "../Assets/Opponent logos/teamlogo3.png";
+import team2 from "../Assets/Opponent logos/team2.png";
+import team3 from "../Assets/Opponent logos/team3.png";
+import team4 from "../Assets/Opponent logos/team4.png";
+import team5 from "../Assets/Opponent logos/team5.png";
+import team6 from "../Assets/Opponent logos/team6.png";
+import team7 from "../Assets/Opponent logos/team7.png";
 
 const Home = () => {
 

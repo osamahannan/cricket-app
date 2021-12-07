@@ -1,14 +1,14 @@
 import React, { useEffect } from 'react'
 import Aos from "aos";
 import "aos/dist/aos.css";
-import osamapic from "../Assets/osama.svg";
-import minhajpic from "../Assets/minhaj.svg";
-import faizpic from "../Assets/Faiz1.svg";
-import rashidpic from "../Assets/Rashid.svg";
-import intzarpic from "../Assets/Intzar.svg";
-import zainpic from "../Assets/Zain.svg";
-import irfanpic from "../Assets/Irfan1.svg";
-import dummypic from "../Assets/profile.svg";
+import osamapic from "../Assets/Profile pics/osama.svg";
+import minhajpic from "../Assets/Profile pics/minhaj.svg";
+import faizpic from "../Assets/Profile pics/Faiz1.svg";
+import rashidpic from "../Assets/Profile pics/Rashid.svg";
+import intzarpic from "../Assets/Profile pics/Intzar.svg";
+import zainpic from "../Assets/Profile pics/Zain.svg";
+import irfanpic from "../Assets/Profile pics/Irfan1.svg";
+import dummypic from "../Assets/Profile pics/profile.svg";
 
 const Team = () => {
 
