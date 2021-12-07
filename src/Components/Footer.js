@@ -20,7 +20,7 @@ const Footer = () => {
             <div className="footer-container">
                 <div className="team11">
                     <img src={logo} alt="" />
-                    <p>Since 2021,we have been offering travel services of the highest quality,combining our energy and enthusiasm.</p>
+                    <p>Since 2021, we have been offering travel services of the highest quality, combining our energy and enthusiasm.</p>
                 </div>
                 <div className="footer-contact">
                     <div className="footer-heading">
