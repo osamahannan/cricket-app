@@ -53,8 +53,6 @@
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  /* min-height: 125px; */
-  /* padding: 1.5rem; */
 }
 
 .service-center {
@@ -62,7 +60,6 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  /* min-width: 450px; */
   margin: 1rem 2rem 0.5rem 2rem;
 }
 
@@ -289,9 +286,8 @@
   .last, .second-last {
     display: flex;
     flex-direction: column;
-    height: 200px;
     margin: 30px 20px;
-    padding: 0 1.5rem;
+    padding: 1rem 1.5rem;
     background-color: white;
     justify-content: center;
     align-items: center;
@@ -693,6 +689,19 @@
     flex-direction: column;
   }
 
+  .heading {
+    margin: 0;
+  }
+
+  .phone-mail {
+    justify-content: space-evenly;
+    width: 100vw;
+  }
+
+  .email {
+    margin: 0;
+  }
+
   .social-container {
     margin: 0.7rem 0;
   }
@@ -744,11 +753,12 @@
   .copyright {
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
     width: 100%;
   }
 
   .copyright span {
-    margin: 0;
+    margin: 0 1rem;
   }
 
 }
@@ -805,6 +815,76 @@
 
   .match-container h1 {
     font-size: 2rem;
+  }
+
+  .opponent-teams h1 {
+    font-size: 2rem;
+    margin: 2rem 0 0.5rem 0;
+  }
+
+  .player1, .player2 {
+    padding-top: 10px;
+  }
+
+  .column {
+    height: 271px;
+  }
+
+  .logos {
+    width: 230px;
+    height: 270px;
+  }
+
+  .logo-section img {
+    height: 120px;
+  }
+
+  .logo-section h2, .logo-section h2 {
+    font-size: 1.4rem;
+  }
+
+  .team11 {
+    margin: 0;
+  }
+
+  .footer-contact {
+    width: 38vw;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+  .osamahannan img {
+    height: 45px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .team11, .footer-contact {
+    width: 70vw;
+  }
+
+  .copyright {
+    width: 90vw;
+  }
+
+  .win {
+    flex-direction: column;
+  }
+
+  .lose {
+    flex-direction: column-reverse;
+  }
+
+  .win img, .lose img {
+    height: 80px;
+  }
+
+  .lose-score h2, .win-score h2 {
+    font-size: 1.5rem;
   }
 
 }
