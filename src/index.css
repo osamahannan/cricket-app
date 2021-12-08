@@ -75,7 +75,7 @@
 }
 
 .center {
-  color: red;
+  color: #e7bb38;
 }
 
 .phone-mail {
@@ -117,7 +117,7 @@
 
 .email-icon {
   font-size: 40px;
-  color: red;
+  color: #e7bb38;
 }
 
 .gmail {
@@ -139,6 +139,38 @@
   align-items: center;
   border-bottom: 1px solid rgb(204, 201, 201);
   border-top: 1px solid rgb(204, 201, 201);
+}
+
+.active {
+  display: flex;
+  flex-direction: column;
+}
+
+.navdiv {
+  display: flex;
+}
+
+.hamburger {
+  margin-right: 5px;
+  font-size: 28px;
+}
+
+.cross {
+  margin-right: 5px;
+  font-size: 23px;
+}
+
+.li-contact {
+  color: rgb(138, 138, 138);
+  cursor: pointer;
+}
+
+.li-contact:hover {
+  color: black;
+}
+
+.noSelect.active-link {
+  color: black;
 }
 
 .logo {
@@ -192,7 +224,7 @@
    display: flex;
    align-items: center;
    width: 100%;
-   height: 800px;
+   height: 50vw;
    background-image: url(./Assets/cricket.jpg);
    background-position: center;
    background-repeat: no-repeat;
@@ -200,7 +232,7 @@
  }
 
  .bat-ball {
-  width: 35vw;
+  width: 510px;
   margin: 0 0 0 3rem;
 }
 
@@ -379,7 +411,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 600px;
+  min-height: 600px;
   color: white;
 }
 
@@ -504,7 +536,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50vh;
+  min-height: 50vh;
   background-color: #06083B;
   color: white;
 }
@@ -513,7 +545,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   width: 100%;
+  /* margin-top: 2rem; */
 }
 
 .team11 {
@@ -521,9 +555,10 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  width: 20vw;
+  width: 23vw;
   height: 25vh;
-  margin: 0 50px;
+  margin-right: 40px;
+  border: 1px solid white;
 }
 
 .team11 img {
@@ -538,8 +573,9 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0 50px;
+  margin: 30px;
   width: 300px;
+  border: 1px solid white;
 }
 
 .footer-heading {
@@ -572,7 +608,8 @@
   flex-direction: column;
   align-items: center;
   font-size: 18px;
-  margin: 0 50px;
+  margin: 20px;
+  border: 1px solid white;
 }
 
 .copyright span {
@@ -638,6 +675,18 @@
 
 /* Responsive */
 
+@media only screen and (max-width: 1170px) {
+
+  .last, .second-last {
+    width: 80vw;
+  }
+
+  .score {
+    justify-content: space-around;
+  }
+
+}
+
 @media only screen and (max-width: 850px) {
   
   .welcome {
@@ -646,6 +695,116 @@
 
   .social-container {
     margin: 0.7rem 0;
+  }
+
+  .bat-ball {
+    width: 315px;
+  }
+
+  .bat-ball h1 {
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+  }
+
+  .about-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about {
+    margin-top: 2rem;
+  }
+
+  .player-content {
+    flex-direction: column;
+  }
+
+  .player1, .player2 {
+    width: 70vw;
+    height: 220px;
+  }
+
+  .testimonial h1 {
+    font-size: 2rem;
+  }
+
+  .quote {
+    font-size: 2.5rem;
+  }
+
+  .team11 {
+    width: 40vw;
+  }
+
+  .footer-contact {
+    width: 40vw;
+  }
+
+  .copyright {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .copyright span {
+    margin: 0;
+  }
+
+}
+
+@media only screen and (max-width: 750px) {
+
+  .bat-ball p {
+    display: none;
+  }
+
+  .bat-ball {
+    margin: 0 0 0 2rem;
+  }
+
+  .hidden {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    align-items: center;
+    left: -100%;
+    top: 0;
+    height: 100%;
+    background-color: rgb(230, 228, 228);
+    width: 50%;
+    transition: 0.3s all ease;
+    border-radius: 0 0 15px 0;
+    padding-top: 20px;
+  }
+
+  .hidden a {
+    font-size: 18px;
+  }
+
+  .hidden.active {
+    left: 0%;
+  }
+
+  .navdiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 200px;
+    margin: 2rem;
+  }
+
+  .btn {
+    padding: 5px 10px;
+  }
+
+  .match-container {
+    margin: 30px 0;
+  }
+
+  .match-container h1 {
+    font-size: 2rem;
   }
 
 }
