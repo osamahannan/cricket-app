@@ -887,4 +887,8 @@
     font-size: 1.5rem;
   }
 
+  .about {
+    width: unset;
+  }
+
 }
