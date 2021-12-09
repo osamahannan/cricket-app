@@ -1,17 +1,10 @@
 import React, { useEffect } from 'react'
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { Opponent } from "../Helper/Oppenent";
 import { FaQuoteLeft } from "react-icons/fa";
 import cricketbg from "../Assets/cricketbg.jpg";
-import loselogo from "../Assets/Opponent logos/teamlogo1.png";
 import winlogo from "../Assets/Opponent logos/teamlogo2.png";
-import loselogo2 from "../Assets/Opponent logos/teamlogo3.png";
-import team2 from "../Assets/Opponent logos/team2.png";
-import team3 from "../Assets/Opponent logos/team3.png";
-import team4 from "../Assets/Opponent logos/team4.png";
-import team5 from "../Assets/Opponent logos/team5.png";
-import team6 from "../Assets/Opponent logos/team6.png";
-import team7 from "../Assets/Opponent logos/team7.png";
 
 const Home = () => {
 
@@ -54,7 +47,7 @@ const Home = () => {
                                         <h2>77/5</h2>
                                         <span>8 over</span>
                                     </div>
-                                    <img src={loselogo} alt="winlogo" />
+                                    <img src={Opponent[0].url} alt="winlogo" />
                                 </div>
                             </div>
                             <span>Annihilators Won by 9 wickets</span>
@@ -74,7 +67,7 @@ const Home = () => {
                                         <h2>70/5</h2>
                                         <span>8 over</span>
                                     </div>
-                                    <img src={loselogo2} alt="winlogo" />
+                                    <img src={Opponent[6].url} alt="winlogo" />
                                 </div>
                             </div>
                             <span>Annihilators Won by 8 wickets</span>
@@ -121,54 +114,18 @@ const Home = () => {
             <div className="opponent-teams" data-aos="fade-up">
                 <h1>Our Opponent Teams</h1>
                 <div className="logo-section">
-                    <div className="column" data-aos="flip-right">
-                        <div className="logos" >
-                            <img src={loselogo} alt="team_logo 1" />
-                            <h2>The Tyrants</h2>
-                        </div>
-                    </div>
-                    <div className="column" data-aos="flip-right">
-                        <div className="logos">
-                            <img src={team2} alt="team_logo 2" />
-                            <h2>The Supernovas</h2>
-                        </div>
-                    </div>
-                    <div className="column" data-aos="flip-left">
-                        <div className="logos">
-                            <img src={team3} alt="team_logo 3" />
-                            <h2>The Go Getters</h2>
-                        </div>
-                    </div>
-                    <div className="column" data-aos="flip-left">
-                        <div className="logos" >
-                            <img src={team4} alt="team_logo 4" />
-                            <h2>Batting Divas</h2>
-                        </div>
-                    </div>
-                    <div className="column" data-aos="flip-right">
-                        <div className="logos">
-                            <img src={team7} alt="team_logo 5" />
-                            <h2>UP Stars</h2>
-                        </div>
-                    </div>
-                    <div className="column" data-aos="flip-right">
-                        <div className="logos">
-                            <img src={team5} alt="team_logo 6" />
-                            <h2>The Guardians</h2>
-                        </div>
-                    </div>
-                    <div className="column" data-aos="flip-left">
-                        <div className="logos">
-                            <img src={loselogo2} alt="team_logo 7" />
-                            <h2>The Avengers</h2>
-                        </div>
-                    </div>
-                    <div className="column" data-aos="flip-left">
-                        <div className="logos">
-                            <img src={team6} alt="team_logo 8" />
-                            <h2>The Outsiders</h2>
-                        </div>
-                    </div>
+
+                    {Opponent.map(opponent => {
+                        return (
+                            <div className="column" data-aos="flip-left" key={opponent.id}>
+                                <div className="logos">
+                                    <img src={opponent.url} alt="team_logo 7" />
+                                    <h2>{opponent.name}</h2>
+                                </div>
+                            </div>
+                        )
+                    })}
+
                 </div>
             </div>
 

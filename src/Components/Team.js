@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import Aos from "aos";
 import "aos/dist/aos.css";
-import { players } from "../Helper/players"
+import { Players } from "../Helper/Players"
 
 const Team = () => {
 
@@ -16,7 +16,7 @@ const Team = () => {
             </div>
             <div className="player-container">
 
-                {players.map((player) => {
+                {Players.map((player) => {
                     return (
                         <div className="card-container" data-aos="flip-right" key={player.id}>
                             <div className="player-card">

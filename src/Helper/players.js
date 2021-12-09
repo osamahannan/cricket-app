@@ -8,7 +8,7 @@ import irfanpic from "../Assets/Profile pics/Irfan.svg";
 import shareefpic from "../Assets/Profile pics/shareef.svg";
 import dummypic from "../Assets/Profile pics/profile.svg";
 
-export const players = [
+export const Players = [
 
     {
         id: 1,
