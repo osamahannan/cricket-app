@@ -892,3 +892,32 @@
   }
 
 }
+
+@media only screen and (max-width: 450px) {
+
+  /* .service-center {
+    margin-top: 0;
+  } */
+
+  .phone-mail {
+    flex-direction: column;
+    /* justify-content: space-between; */
+    width: 100%;
+  }
+
+  .phone {
+    margin-bottom: 1rem;
+  }
+
+  .service, .center {
+    font-size: 1.6rem;
+  }
+
+
+  /* .win img, .lose img {
+    margin: 0;
+  } */
+
+
+
+}

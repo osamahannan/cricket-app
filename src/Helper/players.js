@@ -5,6 +5,7 @@ import rashidpic from "../Assets/Profile pics/Rashid.svg";
 import intzarpic from "../Assets/Profile pics/Intzar.svg";
 import zainpic from "../Assets/Profile pics/Zain.svg";
 import irfanpic from "../Assets/Profile pics/Irfan.svg";
+import shareefpic from "../Assets/Profile pics/shareef.svg";
 import dummypic from "../Assets/Profile pics/profile.svg";
 
 export const players = [
@@ -77,7 +78,7 @@ export const players = [
     {
         id: 14,
         name : "Shareef",
-        url : dummypic
+        url : shareefpic
     },
     {
         id: 15,
