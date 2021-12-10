@@ -895,13 +895,16 @@
 
 @media only screen and (max-width: 450px) {
 
-  /* .service-center {
-    margin-top: 0;
-  } */
+  .service-center {
+    margin: 1rem 1rem 0.5rem 1rem;
+  }
+
+  .service-center h2 {
+    font-size: 1.2rem;
+  }
 
   .phone-mail {
     flex-direction: column;
-    /* justify-content: space-between; */
     width: 100%;
   }
 
@@ -913,11 +916,40 @@
     font-size: 1.6rem;
   }
 
+  .bat-ball h1 {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
 
-  /* .win img, .lose img {
+  .btn {
+    font-size: 13px;
+    margin-top: 1rem;
+  }
+
+  .bat-ball {
+    width: 250px;
+  }
+
+  .about-container {
+    margin: 3rem 0;
+  }
+
+  .image_section {
+    margin: 0 2rem;
+  }
+
+  .image_section img {
+    height: 95vw;
     margin: 0;
-  } */
+  }
 
+  .player1, .player2 {
+    height: 320px;
+  }
 
+  .testimonial h1 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+  }
 
 }
