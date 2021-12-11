@@ -62,8 +62,8 @@ export const Players = [
     },
     {
         id: 13,
-        name: "Imran Khan",
-        url: "Assets/Profile pics/profile.svg"
+        name: "Sameer",
+        url: "Assets/Profile pics/sameer.svg"
     },
     {
         id: 14,
