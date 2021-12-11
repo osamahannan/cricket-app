@@ -28,7 +28,7 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className="parent">
+            <div className="parent" data-aos="fade-up">
                 <div className="match-container">
                     <h1>Last Match Result</h1>
                     <div className="result">
