@@ -854,7 +854,7 @@
   }
 
   .team11 {
-    margin: 0;
+    margin: 10px 0;
   }
 
   .footer-contact {
@@ -980,17 +980,8 @@
     height: 40px;
   }
 
-  .card-container {
-    margin: 0.2rem 1.5rem;
-  }
-
-  .player-card {
-    height: 225px;
-    width: 202px;
-  }
-
   .profile img {
-    height: 83px;
+    height: 100px;
   }
 }
 
