@@ -4,6 +4,8 @@ const Fund = () => {
     return (
         <div>
             <h1>This is Fund Page</h1>
+            <h1>This is Fund Page</h1>
+            
         </div>
     )
 }
