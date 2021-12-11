@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from "react-router-dom";
-import logopic from "../Assets/Annihilators3.png";
+import logopic from "../backgrounds/Annihilators3.png";
 import { useMediaQuery } from 'react-responsive'
 import { ImCross } from "react-icons/im";
 import { GiHamburgerMenu } from "react-icons/gi";

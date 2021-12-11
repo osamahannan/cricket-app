@@ -1,22 +1,22 @@
-import React, { useEffect } from 'react'
-import logo from "../Assets/Annihilators4.png";
+import React from 'react'
+import logo from "../backgrounds/Annihilators4.png";
 import { VscHome } from "react-icons/vsc";
 import { BsTelephone } from "react-icons/bs";
 import { HiOutlineMail } from "react-icons/hi";
 import { FaGithub } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
-import Aos from "aos";
-import "aos/dist/aos.css";
+// import Aos from "aos";
+// import "aos/dist/aos.css";
 
 const Footer = () => {
 
-    useEffect(() => {
-        Aos.init({ duration: 1000, once: true })
-    }, []);
+    // useEffect(() => {
+    //     Aos.init({ duration: 1000, once: true })
+    // }, []);
 
     return (
-        <div className="footer" data-aos ="fade-up">
+        <div className="footer">
             <div className="footer-container">
                 <div className="team11">
                     <img src={logo} alt="" />

@@ -1,22 +1,22 @@
-import React, { useEffect } from 'react'
-import Aos from "aos";
-import "aos/dist/aos.css";
+import React from 'react'
+// import Aos from "aos";
+// import "aos/dist/aos.css";
 import { Opponent } from "../Helper/Oppenent";
 import { FaQuoteLeft } from "react-icons/fa";
-import cricketbg from "../Assets/cricketbg.jpg";
-import winlogo from "../Assets/Opponent logos/teamlogo2.png";
+import cricketbg from "../backgrounds/cricketbg.jpg";
+import winlogo from "../backgrounds/teamlogo2.png";
 
 const Home = () => {
 
-    useEffect(() => {
-        Aos.init({ duration: 1000, once: true })
-    }, []);
+    // useEffect(() => {
+    //     Aos.init({ duration: 1000, once: true })
+    // }, []);
 
 
     return (
         <div className="home">
 
-            <div className="welcome-box" data-aos="fade-up">
+            <div className="welcome-box">
                 <div className="bat-ball">
                     <h1>Cricket is the most wonderful entertainment in the world</h1>
                     <p>The fans can make you famous.<br />
@@ -28,11 +28,11 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className="parent" data-aos="fade-up">
+            <div className="parent">
                 <div className="match-container">
                     <h1>Last Match Result</h1>
                     <div className="result">
-                        <div className="last" data-aos="fade-right">
+                        <div className="last">
                             <time> Nov 24, 2021 </time>
                             <div className="score">
                                 <div className="win">
@@ -52,7 +52,7 @@ const Home = () => {
                             </div>
                             <span>Annihilators Won by 9 wickets</span>
                         </div>
-                        <div className="second-last" data-aos="fade-left">
+                        <div className="second-last">
                             <time> Nov 21, 2021 </time>
                             <div className="score">
                                 <div className="lose">
@@ -77,11 +77,11 @@ const Home = () => {
             </div>
 
             <div className="about-section">
-                <div className="about-container" data-aos="fade-up">
-                    <div className="image_section" data-aos="fade-up">
+                <div className="about-container">
+                    <div className="image_section">
                         <img src={cricketbg} alt="stadium background" />
                     </div>
-                    <div className="about" data-aos="fade-up">
+                    <div className="about">
                         <h1>About Us</h1>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 
@@ -91,19 +91,19 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className="testimonial" data-aos="fade-up">
+            <div className="testimonial">
                 <h1>Testimonials From Our Players</h1>
                 <div className="player-content">
-                    <div className="player1" data-aos="fade-right">
+                    <div className="player1">
                         <FaQuoteLeft className="quote" />
-                        <p>Thank you for letting me be a part of such a fantastic team! Being a captain for this team is much more than just work, it’s an unforgettable experience that will stay with me for the rest of my life.</p>
+                        <p>Thank you for letting me be a part of such a fantastic team! Being a captain for this team is much more than just work, it is an unforgettable experience that will stay with me for the rest of my life.</p>
                         <div className="player-name">
                             <h3>Minhaj Ahmad Khan &nbsp;</h3><span>/ Captain</span>
                         </div>
                     </div>
-                    <div className="player2" data-aos="fade-left">
+                    <div className="player2">
                         <FaQuoteLeft className="quote" />
-                        <p>Thank you for letting me be a part of such a fantastic team! Being a vice-captain for this team is much more than just work, it’s an unforgettable experience that will stay with me for the rest of my life.</p>
+                        <p>Thank you for letting me be a part of such a fantastic team! Being a vice-captain for this team is much more than just work, it is an unforgettable experience that will stay with me for the rest of my life.</p>
                         <div className="player-name">
                             <h3>Osama Hannan &nbsp;</h3><span>/ Vice Captain</span>
                         </div>
@@ -111,13 +111,13 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className="opponent-teams" data-aos="fade-up">
+            <div className="opponent-teams">
                 <h1>Our Opponent Teams</h1>
                 <div className="logo-section">
 
                     {Opponent.map(opponent => {
                         return (
-                            <div className="column" data-aos="flip-left" key={opponent.id}>
+                            <div className="column" key={opponent.id}>
                                 <div className="logos">
                                     <img src={opponent.url} alt="team_logo 7" />
                                     <h2>{opponent.name}</h2>
