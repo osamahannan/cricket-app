@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
-import logo from "../backgrounds/Annihilators4.png";
+import { Link } from "react-router-dom";
+import logo from "../backgrounds/tab-logo.svg";
 import { VscHome } from "react-icons/vsc";
 import { BsTelephone } from "react-icons/bs";
 import { HiOutlineMail } from "react-icons/hi";
@@ -19,7 +20,10 @@ const Footer = () => {
         <div className="footer" data-aos="fade-up">
             <div className="footer-container">
                 <div className="team11" data-aos="fade-right">
-                    <img src={logo} alt="" />
+                    <Link to="/" className="annihilator2">
+                        <img src={logo} alt="Annihilators" />
+                        <h1>ANNIHILATORS</h1>
+                    </Link>
                     <p>Since 2021, we have been offering travel services of the highest quality, combining our energy and enthusiasm.</p>
                 </div>
                 <div className="footer-contact" data-aos="fade-up">

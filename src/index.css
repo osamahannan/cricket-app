@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Dancing+Script:wght@700&family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Dancing+Script:wght@700&family=Pacifico&family=Shrikhand&display=swap");
 
 * {
   margin: 0;
@@ -173,17 +174,26 @@
   margin-left: 10px;
 }
 
-.osamahannan {
+.annihilator,
+.annihilator2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
-  color: rgb(30, 180, 180);
-  font-size: 17px;
-  font-family: "Dancing Script", cursive;
-  font-family: "Pacifico", cursive;
 }
 
-.osamahannan img {
-  height: 55px;
-  margin-top: 10px;
+.annihilator img,
+.annihilator2 img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.annihilator h1,
+.annihilator2 h1 {
+  font-family: "Shrikhand", cursive;
+  color: #06083b;
+  font-size: 1.5rem;
+  font-weight: lighter;
 }
 
 .navbar ul {
@@ -570,6 +580,10 @@
   margin-right: 40px;
 }
 
+.annihilator2 h1 {
+  color: white;
+}
+
 .team11 img {
   height: 50px;
 }
@@ -863,7 +877,7 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .osamahannan img {
+  .annihilator img {
     height: 45px;
   }
 
@@ -976,7 +990,7 @@
     width: 83vw;
   }
 
-  .osamahannan img {
+  .annihilator img {
     height: 40px;
   }
 

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from "react-router-dom";
-import logopic from "../backgrounds/Annihilators3.png";
+import logopic from "../backgrounds/tab-logo.svg";
 import { useMediaQuery } from 'react-responsive'
 import { ImCross } from "react-icons/im";
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -21,8 +21,9 @@ const Navbar = () => {
     return (
         <nav className="navbar">
             <div className="logo">
-                <Link to="/" className="osamahannan">
+                <Link to="/" className="annihilator">
                     <img src={logopic} alt="Annihilators" />
+                    <h1>ANNIHILATORS</h1>
                 </Link>
             </div>
             {isMobile ? (<ul>
