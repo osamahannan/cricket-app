@@ -52,7 +52,7 @@ const Home = () => {
                             </div>
                             <span>Annihilators Won by 9 wickets</span>
                         </div>
-                        <div className="second-last" data-aos="fade -left">
+                        <div className="second-last" data-aos="fade-left">
                             <time> Nov 21, 2021 </time>
                             <div className="score">
                                 <div className="lose">

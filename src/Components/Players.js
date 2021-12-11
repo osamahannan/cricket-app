@@ -8,7 +8,7 @@ export const Players = [
     {
         id: 2,
         name: "Zain Zaman Khan",
-        url: "Assets/Profile pics/Zain.svg"
+        url: "Assets/Profile pics/zain2.0.svg"
     },
     {
         id: 3,
@@ -23,7 +23,7 @@ export const Players = [
     {
         id: 5,
         name: "Asad Raiyan",
-        url: "Assets/Profile pics/profile.svg"
+        url: "Assets/Profile pics/asad.svg"
     },
     {
         id: 6,
@@ -33,7 +33,7 @@ export const Players = [
     {
         id: 7,
         name: "Rashid",
-        url: "Assets/Profile pics/Rashid.svg"
+        url: "Assets/Profile pics/rashid2.0.svg"
     },
     {
         id: 8,
