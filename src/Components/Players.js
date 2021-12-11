@@ -52,7 +52,7 @@ export const Players = [
     },
     {
         id: 11,
-        name: "Intzar",
+        name: "Intzar Khan",
         url: "Assets/Profile pics/Intzar.svg"
     },
     {
@@ -62,7 +62,7 @@ export const Players = [
     },
     {
         id: 13,
-        name: "Sameer",
+        name: "Sameer Khan",
         url: "Assets/Profile pics/sameer.svg"
     },
     {
