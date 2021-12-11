@@ -1,7 +1,7 @@
 import React from 'react'
 // import Aos from "aos";
 // import "aos/dist/aos.css";
-import  {Players}  from "../Helper/Players.js"
+import  {Players}  from "./Players"
 import dummypic from "../backgrounds/profile.svg";
 
 const Team = () => {
