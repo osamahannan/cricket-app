@@ -1,7 +1,8 @@
 import React from 'react'
 // import Aos from "aos";
 // import "aos/dist/aos.css";
-import { Players } from "../Helper/Players"
+// import { Players } from "../Helper/Players"
+import dummypic from "../backgrounds/profile.svg";
 
 const Team = () => {
 
@@ -16,18 +17,130 @@ const Team = () => {
             </div>
             <div className="player-container">
 
-                {Players.map((player) => {
-                    return (
-                        <div className="card-container" key={player.id}>
+                {/* {Players.map((player) => {
+                    return ( */}
+                        <div className="card-container">
                             <div className="player-card">
                                 <div className="profile">
-                                    <img src={player.url} alt="Profile Pic" />
+                                    <img src={dummypic} alt="Profile Pic" />
                                 </div>
-                                <span className="player-card-name">{player.name}</span>
+                                <span className="player-card-name">Profile Name</span>
                             </div>
                         </div>
-                    )
-                })}
+                        <div className="card-container">
+                            <div className="player-card">
+                                <div className="profile">
+                                    <img src={dummypic} alt="Profile Pic" />
+                                </div>
+                                <span className="player-card-name">Profile Name</span>
+                            </div>
+                        </div>
+                        <div className="card-container">
+                            <div className="player-card">
+                                <div className="profile">
+                                    <img src={dummypic} alt="Profile Pic" />
+                                </div>
+                                <span className="player-card-name">Profile Name</span>
+                            </div>
+                        </div>
+                        <div className="card-container">
+                            <div className="player-card">
+                                <div className="profile">
+                                    <img src={dummypic} alt="Profile Pic" />
+                                </div>
+                                <span className="player-card-name">Profile Name</span>
+                            </div>
+                        </div>
+                        <div className="card-container">
+                            <div className="player-card">
+                                <div className="profile">
+                                    <img src={dummypic} alt="Profile Pic" />
+                                </div>
+                                <span className="player-card-name">Profile Name</span>
+                            </div>
+                        </div>
+                        <div className="card-container">
+                            <div className="player-card">
+                                <div className="profile">
+                                    <img src={dummypic} alt="Profile Pic" />
+                                </div>
+                                <span className="player-card-name">Profile Name</span>
+                            </div>
+                        </div>
+                        <div className="card-container">
+                            <div className="player-card">
+                                <div className="profile">
+                                    <img src={dummypic} alt="Profile Pic" />
+                                </div>
+                                <span className="player-card-name">Profile Name</span>
+                            </div>
+                        </div>
+                        <div className="card-container">
+                            <div className="player-card">
+                                <div className="profile">
+                                    <img src={dummypic} alt="Profile Pic" />
+                                </div>
+                                <span className="player-card-name">Profile Name</span>
+                            </div>
+                        </div>
+                        <div className="card-container">
+                            <div className="player-card">
+                                <div className="profile">
+                                    <img src={dummypic} alt="Profile Pic" />
+                                </div>
+                                <span className="player-card-name">Profile Name</span>
+                            </div>
+                        </div>
+                        <div className="card-container">
+                            <div className="player-card">
+                                <div className="profile">
+                                    <img src={dummypic} alt="Profile Pic" />
+                                </div>
+                                <span className="player-card-name">Profile Name</span>
+                            </div>
+                        </div>
+                        <div className="card-container">
+                            <div className="player-card">
+                                <div className="profile">
+                                    <img src={dummypic} alt="Profile Pic" />
+                                </div>
+                                <span className="player-card-name">Profile Name</span>
+                            </div>
+                        </div>
+                        <div className="card-container">
+                            <div className="player-card">
+                                <div className="profile">
+                                    <img src={dummypic} alt="Profile Pic" />
+                                </div>
+                                <span className="player-card-name">Profile Name</span>
+                            </div>
+                        </div>
+                        <div className="card-container">
+                            <div className="player-card">
+                                <div className="profile">
+                                    <img src={dummypic} alt="Profile Pic" />
+                                </div>
+                                <span className="player-card-name">Profile Name</span>
+                            </div>
+                        </div>
+                        <div className="card-container">
+                            <div className="player-card">
+                                <div className="profile">
+                                    <img src={dummypic} alt="Profile Pic" />
+                                </div>
+                                <span className="player-card-name">Profile Name</span>
+                            </div>
+                        </div>
+                        <div className="card-container">
+                            <div className="player-card">
+                                <div className="profile">
+                                    <img src={dummypic} alt="Profile Pic" />
+                                </div>
+                                <span className="player-card-name">Profile Name</span>
+                            </div>
+                        </div>
+                    {/* )
+                })} */}
 
             </div>
         </div >

@@ -1,7 +1,7 @@
 import React from 'react'
 // import Aos from "aos";
 // import "aos/dist/aos.css";
-import { Opponent } from "../Helper/Oppenent";
+// import { Opponent } from "../Helper/Oppenent";
 import { FaQuoteLeft } from "react-icons/fa";
 import cricketbg from "../backgrounds/cricketbg.jpg";
 import winlogo from "../backgrounds/teamlogo2.png";
@@ -47,7 +47,8 @@ const Home = () => {
                                         <h2>77/5</h2>
                                         <span>8 over</span>
                                     </div>
-                                    <img src={Opponent[0].url} alt="winlogo" />
+                                    <img src={winlogo} alt="winlogo" />
+                                    {/* <img src={Opponent[0].url} alt="winlogo" /> */}
                                 </div>
                             </div>
                             <span>Annihilators Won by 9 wickets</span>
@@ -67,7 +68,8 @@ const Home = () => {
                                         <h2>70/5</h2>
                                         <span>8 over</span>
                                     </div>
-                                    <img src={Opponent[6].url} alt="winlogo" />
+                                    {/* <img src={Opponent[6].url} alt="winlogo" /> */}
+                                    <img src={winlogo} alt="winlogo" />
                                 </div>
                             </div>
                             <span>Annihilators Won by 8 wickets</span>
@@ -115,16 +117,58 @@ const Home = () => {
                 <h1>Our Opponent Teams</h1>
                 <div className="logo-section">
 
-                    {Opponent.map(opponent => {
-                        return (
-                            <div className="column" key={opponent.id}>
+                    {/* {Opponent.map(opponent => {
+                        return ( */}
+                            <div className="column">
                                 <div className="logos">
-                                    <img src={opponent.url} alt="team_logo 7" />
-                                    <h2>{opponent.name}</h2>
+                                    <img src={winlogo} alt="team_logo 7" />
+                                    <h2>The Avengers</h2>
                                 </div>
                             </div>
-                        )
-                    })}
+                            <div className="column">
+                                <div className="logos">
+                                    <img src={winlogo} alt="team_logo 7" />
+                                    <h2>The Avengers</h2>
+                                </div>
+                            </div>
+                            <div className="column">
+                                <div className="logos">
+                                    <img src={winlogo} alt="team_logo 7" />
+                                    <h2>The Avengers</h2>
+                                </div>
+                            </div>
+                            <div className="column">
+                                <div className="logos">
+                                    <img src={winlogo} alt="team_logo 7" />
+                                    <h2>The Avengers</h2>
+                                </div>
+                            </div>
+                            <div className="column">
+                                <div className="logos">
+                                    <img src={winlogo} alt="team_logo 7" />
+                                    <h2>The Avengers</h2>
+                                </div>
+                            </div>
+                            <div className="column">
+                                <div className="logos">
+                                    <img src={winlogo} alt="team_logo 7" />
+                                    <h2>The Avengers</h2>
+                                </div>
+                            </div>
+                            <div className="column">
+                                <div className="logos">
+                                    <img src={winlogo} alt="team_logo 7" />
+                                    <h2>The Avengers</h2>
+                                </div>
+                            </div>
+                            <div className="column">
+                                <div className="logos">
+                                    <img src={winlogo} alt="team_logo 7" />
+                                    <h2>The Avengers</h2>
+                                </div>
+                            </div>
+                        {/* )
+                    })} */}
 
                 </div>
             </div>
