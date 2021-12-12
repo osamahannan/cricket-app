@@ -8,7 +8,7 @@ export const Players = [
     {
         id: 2,
         name: "Zain Zaman Khan",
-        url: "Assets/Profile pics/zain2.0.svg"
+        url: "Assets/Profile pics/zain4.0.svg"
     },
     {
         id: 3,
@@ -17,8 +17,8 @@ export const Players = [
     },
     {
         id: 4,
-        name: "Mohammad Faiz",
-        url: "Assets/Profile pics/Faiz2.0.svg"
+        name: "Mohd Faiz",
+        url: "Assets/Profile pics/Faiz3.0.svg"
     },
     {
         id: 5,
@@ -28,11 +28,11 @@ export const Players = [
     {
         id: 6,
         name: "Syed Faraz",
-        url: "Assets/Profile pics/profile.svg"
+        url: "Assets/Profile pics/syed.svg"
     },
     {
         id: 7,
-        name: "Rashid",
+        name: "Mohd Rashid",
         url: "Assets/Profile pics/rashid2.0.svg"
     },
     {
@@ -43,7 +43,7 @@ export const Players = [
     {
         id: 9,
         name: "Shahbaz Ahmad Khan",
-        url: "Assets/Profile pics/profile.svg"
+        url: "Assets/Profile pics/shahbaz.svg"
     },
     {
         id: 10,
@@ -57,7 +57,7 @@ export const Players = [
     },
     {
         id: 12,
-        name: "Arif Bhai",
+        name: "Sajid Khan",
         url: "Assets/Profile pics/profile.svg"
     },
     {
@@ -67,7 +67,7 @@ export const Players = [
     },
     {
         id: 14,
-        name: "Shareef",
+        name: "Shareef Gazi",
         url: "Assets/Profile pics/shareef.svg"
     },
     {
