@@ -28,11 +28,11 @@ const Header = () => {
                 </div>
                 <div className="phone-mail">
                     <div className="phone">
-                        <BsFillTelephoneFill className="telephone"/>
+                        <a href="tel:8181007105" cm_dontconvertlink><BsFillTelephoneFill className="telephone" /></a>
                         <a href="tel:8181007105" cm_dontconvertlink>8181007105</a>
                     </div>
                     <div className="email">
-                        <MdEmail className="email-icon"/>
+                        <MdEmail className="email-icon" />
                         <div className="gmail">
                             <h4>MAIL US</h4>
                             <span>annihilator@gmail.com</span>

@@ -615,6 +615,11 @@
   margin: 5px;
 }
 
+.footer-icons a {
+  text-decoration: none;
+  color: white;
+}
+
 .footericon {
   font-size: 22px;
   margin: 10px;
@@ -692,6 +697,25 @@
 .player-card-name {
   font-size: 1.2rem;
   margin-bottom: 10px;
+}
+
+/* Fund Section */
+
+.parent-fund {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.fund {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 700px;
+  height: 250px;
+  background-color: aqua;
+  margin: 1rem;
 }
 
 /* Responsive */
@@ -804,7 +828,7 @@
     top: 0;
     height: 100%;
     background-color: rgb(230, 228, 228);
-    width: 50%;
+    width: 54%;
     transition: 0.3s all ease;
     border-radius: 0 0 15px 0;
     padding-top: 20px;
@@ -945,6 +969,15 @@
     font-size: 1.6rem;
   }
 
+  .annihilator h1,
+  .annihilator2 h1 {
+    font-size: 1.2rem;
+  }
+
+  .annihilator img {
+    height: 40px;
+  }
+
   .bat-ball h1 {
     font-size: 1.2rem;
     line-height: 1.5rem;
@@ -980,6 +1013,10 @@
   .testimonial h1 {
     margin-top: 1rem;
     font-size: 1.5rem;
+  }
+
+  .team11 img {
+    height: 40px;
   }
 }
 

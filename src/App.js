@@ -9,6 +9,8 @@ import Footer from "./Components/Footer";
 
 function App() {
 
+  // const [showLink, setShowLink] = useState(1); 
+
   return (
     <div className="App">
       <Router>
@@ -16,20 +18,20 @@ function App() {
         <Header />
 
         <Navbar />
-        
+
         <Routes>
 
-            <Route exact path ="/" element = {<Home />} />
-            
-            <Route exact path ="/funds" element = {<Fund />} />
-      
-            <Route exact path ="/team" element = {<Team />} />
-                             
+          <Route exact path="/" element={<Home />} />
+
+          <Route exact path="/funds" element={<Fund />} />
+
+          <Route exact path="/team" element={<Team />} />
+
         </Routes>
 
         <Footer />
 
-      </Router> 
+      </Router>
     </div>
   );
 }

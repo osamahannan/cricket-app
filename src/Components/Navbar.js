@@ -21,7 +21,7 @@ const Navbar = () => {
     return (
         <nav className="navbar">
             <div className="logo">
-                <Link to="/" className="annihilator">
+                <Link to="/" className="annihilator" onClick={() => setShowLink(1)} >
                     <img src={logopic} alt="Annihilators" />
                     <h1>ANNIHILATORS</h1>
                 </Link>

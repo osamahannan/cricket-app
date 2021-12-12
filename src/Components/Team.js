@@ -1,31 +1,27 @@
-import React, { useEffect } from 'react'
-import Aos from "aos";
-import "aos/dist/aos.css";
+import React from 'react'
+import Fade from 'react-reveal/Fade';
+import Flip from 'react-reveal/Flip';
 import { Players } from "./Players"
 
 const Team = () => {
 
-    useEffect(() => {
-        Aos.init({ duration: 1000, once: true })
-    }, []);
-
     return (
         <div className="team">
-            <div className="team-intro" data-aos="fade-up">
+            <Fade up><div className="team-intro">
                 <h1>Our Team</h1>
-            </div>
+            </div></Fade>
             <div className="player-container">
 
                 {Players.map((player) => {
                     return (
-                        <div className="card-container" key={player.id} data-aos="flip-right">
+                        <Flip right><div className="card-container" key={player.id}>
                             <div className="player-card">
                                 <div className="profile">
                                     <img src={player.url} alt="Profile Pic" />
                                 </div>
                                 <span className="player-card-name">{player.name}</span>
                             </div>
-                        </div>
+                        </div></Flip>
 
                     )
                 })}
