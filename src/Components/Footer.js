@@ -7,26 +7,21 @@ import { HiOutlineMail } from "react-icons/hi";
 import { FaGithub } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
-// import Aos from "aos";
-// import "aos/dist/aos.css";
+import Fade from 'react-reveal/Fade';
 
 const Footer = () => {
-
-    // useEffect(() => {
-    //     Aos.init({ duration: 1000, once: true })
-    // }, []);
 
     return (
         <div className="footer">
             <div className="footer-container">
-                <div className="team11">
+                <Fade left><div className="team11">
                     <Link to="/" className="annihilator2">
                         <img src={logo} alt="Annihilators" />
                         <h1>ANNIHILATORS</h1>
                     </Link>
                     <p>Since 2021, we have been offering travel services of the highest quality, combining our energy and enthusiasm.</p>
-                </div>
-                <div className="footer-contact">
+                </div></Fade>
+                <Fade up><div className="footer-contact">
                     <div className="footer-heading">
                         <h1 className="cont">CONT</h1>
                         <h1>ACT US</h1>
@@ -43,8 +38,8 @@ const Footer = () => {
                         <HiOutlineMail className="footericon" />
                         <span>osamahannan7@gmail.com</span>
                     </div>
-                </div>
-                <div className="copyright">
+                </div></Fade>
+                <Fade right><div className="copyright">
                     <span>Annihilators &copy;. All Right Reserved</span>
                     <span>Build with React Js</span>
                     <div className="social-container">
@@ -52,7 +47,7 @@ const Footer = () => {
                         <a href="https://twitter.com/Osamahannan1" target="_blank" rel="noreferrer" className="social"><FaTwitter /></a>
                         <a href="https://www.linkedin.com/in/osama-hannan-7337921a0/" target="_blank" rel="noreferrer" className="social"><FaLinkedin /></a>
                     </div>
-                </div>
+                </div></Fade>
             </div>
         </div>
     )
