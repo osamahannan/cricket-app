@@ -18,12 +18,6 @@ const Navbar = () => {
         });
     };
 
-    const scrollToTop = () => {
-        window.scrollTo({
-            top: 0
-        });
-    };
-
     return (
         <nav className="navbar">
             <div className="logo">
@@ -39,13 +33,13 @@ const Navbar = () => {
             <ul className={showMenu ? "hidden active" : "hidden"}>
                 <div className="navdiv">
                     <li>
-                        <Link to="/" onClick={() => { setShowMenu(false); setShowLink(1); scrollToTop(); }} className={(showLink === 1) ? "noSelect active-link" : "noSelect"}> Home </Link>
+                        <Link to="/" onClick={() => { setShowMenu(false); setShowLink(1); }} className={(showLink === 1) ? "noSelect active-link" : "noSelect"}> Home </Link>
                     </li>
                     <li>
-                        <Link to="/team" onClick={() => { setShowMenu(false); setShowLink(2); scrollToTop(); }} className={(showLink === 2) ? "noSelect active-link" : "noSelect"}> Our Team </Link>
+                        <Link to="/team" onClick={() => { setShowMenu(false); setShowLink(2); }} className={(showLink === 2) ? "noSelect active-link" : "noSelect"}> Our Team </Link>
                     </li>
                     <li>
-                        <Link to="/funds" onClick={() => { setShowMenu(false); setShowLink(3); scrollToTop(); }} className={(showLink === 3) ? "noSelect active-link" : "noSelect"}> Our Funds </Link>
+                        <Link to="/funds" onClick={() => { setShowMenu(false); setShowLink(3); }} className={(showLink === 3) ? "noSelect active-link" : "noSelect"}> Our Funds </Link>
                     </li>
                     <li onClick={() => { setShowMenu(false); scrollToBottom(); }} className="noSelect li-contact"> Contact
                     </li>

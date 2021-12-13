@@ -58,7 +58,7 @@ export const Players = [
     {
         id: 12,
         name: "Sajid Khan",
-        url: "Assets/Profile pics/profile.svg"
+        url: "Assets/Profile pics/sajid.svg"
     },
     {
         id: 13,

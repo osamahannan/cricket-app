@@ -6,13 +6,15 @@ import Fund from "./Components/Fund";
 import Team from "./Components/Team";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
+import ScrollToTop from "./Components/ScrollToTop";
 
 function App() {
 
   return (
     <div className="App">
-
       <Router>
+
+        <ScrollToTop smooth />
 
         <Header />
 
@@ -30,9 +32,7 @@ function App() {
 
         <Footer />
 
-
       </Router>
-
     </div >
   );
 }
