@@ -6,17 +6,13 @@ import Fund from "./Components/Fund";
 import Team from "./Components/Team";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
-// import ScrollToTop from "./Components/ScrollToTop";
 
 function App() {
 
-  // const [showLink, setShowLink] = useState(1); 
-
   return (
     <div className="App">
-      <Router>
 
-        {/* <ScrollToTop> */}
+      <Router>
 
         <Header />
 
@@ -34,9 +30,9 @@ function App() {
 
         <Footer />
 
-        {/* </ScrollToTop> */}
 
       </Router>
+
     </div >
   );
 }
