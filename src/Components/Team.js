@@ -11,20 +11,23 @@ const Team = () => {
                 <h1>Our Team</h1>
             </div></Fade>
             <div className="player-container">
+                <div className="player-container2">
 
-                {Players.map((player) => {
-                    return (
-                        <Flip right><div className="card-container" key={player.id}>
-                            <div className="player-card">
-                                <div className="profile">
-                                    <img src={player.url} alt="Profile Pic" />
+                    {Players.map((player) => {
+                        return (
+                            <Flip right><div className="card-container" key={player.id}>
+                                <div className="player-card">
+                                    <div className="profile">
+                                        <img src={player.url} alt="Profile Pic" />
+                                    </div>
+                                    <span className="player-card-name">{player.name}</span>
                                 </div>
-                                <span className="player-card-name">{player.name}</span>
-                            </div>
-                        </div></Flip>
+                            </div></Flip>
 
-                    )
-                })}
+                        )
+                    })}
+
+                </div>
 
             </div>
         </div >
