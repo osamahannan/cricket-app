@@ -7,6 +7,7 @@ import Team from "./Components/Team";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import ScrollToTop from "./Components/ScrollToTop";
+import ScrollButton from "./Components/ScrollButton";
 
 function App() {
 
@@ -29,6 +30,8 @@ function App() {
           <Route exact path="/team" element={<Team />} />
 
         </Routes>
+
+        <ScrollButton />
 
         <Footer />
 

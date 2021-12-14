@@ -541,6 +541,10 @@
   box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.2), 0 20px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.player-card:hover {
+  color: #e7bb38;
+}
+
 .logo-section img,
 .logo-section img {
   height: 150px;
@@ -728,6 +732,32 @@
   height: 20vw;
   background-color: aqua;
   margin: 1rem;
+}
+
+/* Scroll Button */
+
+.scroll-button {
+  display: flex;
+  position: fixed;
+  bottom: 40px;
+  right: 50px;
+  justify-content: center;
+  align-items: center;
+  /* opacity: 0.7; */
+}
+
+.scroll-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+.scroll-icon {
+  font-size: 2rem;
+  color: rgb(97, 96, 96);
 }
 
 /* Responsive */
@@ -1031,6 +1061,11 @@
 
   .team11 img {
     height: 40px;
+  }
+
+  .scroll-button {
+    right: 25px;
+    bottom: 25px;
   }
 }
 
