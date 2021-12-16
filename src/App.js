@@ -17,31 +17,33 @@ function App() {
 
   return (
     <div className="App">
-      <Router>
+      {showModal ? <Modal setShowModal={setShowModal} /> : (
 
-        <ScrollToTop smooth />
+        <Router>
 
-        <Header />
+          <ScrollToTop smooth />
 
-        <Navbar showLink={showLink} setShowLink={setShowLink} />
+          <Header />
 
-        <Routes>
+          <Navbar showLink={showLink} setShowLink={setShowLink} />
 
-          <Route exact path="/" element={<Home />} />
+          <Routes>
 
-          <Route exact path="/funds" element={<Fund />} />
+            <Route exact path="/" element={<Home />} />
 
-          <Route exact path="/team" element={<Team showModal={showModal} setShowModal={setShowModal} />} />
+            <Route exact path="/funds" element={<Fund />} />
 
-        </Routes>
+            <Route exact path="/team" element={<Team showModal={showModal} setShowModal={setShowModal} />} />
 
-        <ScrollButton />
+          </Routes>
 
-        <Footer setShowLink={setShowLink} />
+          <ScrollButton />
 
-        {showModal && <Modal setShowModal={setShowModal} />}
+          <Footer setShowLink={setShowLink} />
 
-      </Router>
+        </Router>
+
+      )}
     </div >
   );
 }

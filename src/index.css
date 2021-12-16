@@ -767,15 +767,24 @@
   justify-content: center;
   align-items: center;
   padding: 10px;
+  border: 1px solid;
+  height: 97vh;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .modal-container {
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
   border: 1px solid;
   padding: 10px;
   border: 1px solid grey;
+  z-index: 2;
 }
 
 .image {
