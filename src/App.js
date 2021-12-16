@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./Components/Navbar";
 import Home from "./Components/Home";
@@ -8,8 +8,12 @@ import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import ScrollToTop from "./Components/ScrollToTop";
 import ScrollButton from "./Components/ScrollButton";
+import Modal from "./Components/Modal";
 
 function App() {
+
+  const [showLink, setShowLink] = useState(1);
+  const [showModal, setShowModal] = useState(false);
 
   return (
     <div className="App">
@@ -19,7 +23,7 @@ function App() {
 
         <Header />
 
-        <Navbar />
+        <Navbar showLink={showLink} setShowLink={setShowLink} />
 
         <Routes>
 
@@ -27,13 +31,15 @@ function App() {
 
           <Route exact path="/funds" element={<Fund />} />
 
-          <Route exact path="/team" element={<Team />} />
+          <Route exact path="/team" element={<Team showModal={showModal} setShowModal={setShowModal} />} />
 
         </Routes>
 
         <ScrollButton />
 
-        <Footer />
+        <Footer setShowLink={setShowLink} />
+
+        {showModal && <Modal setShowModal={setShowModal} />}
 
       </Router>
     </div >

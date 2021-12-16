@@ -3,7 +3,7 @@ import Fade from 'react-reveal/Fade';
 import Flip from 'react-reveal/Flip';
 import { Players } from "./Players"
 
-const Team = () => {
+const Team = ({ showModal, setShowModal }) => {
 
     return (
         <div className="team">
@@ -15,7 +15,7 @@ const Team = () => {
 
                     {Players.map((player) => {
                         return (
-                            <Flip right><div className="card-container" key={player.id}>
+                            <Flip right><div className="card-container" key={player.id} onClick={() => setShowModal(!showModal)}>
                                 <div className="player-card">
                                     <div className="profile">
                                         <img src={player.url} alt="Profile Pic" />

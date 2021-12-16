@@ -760,6 +760,51 @@
   color: rgb(97, 96, 96);
 }
 
+/* Modal Section */
+
+.main-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.modal-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid;
+  padding: 10px;
+  border: 1px solid grey;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 2rem;
+}
+
+.profile-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 200px;
+  padding: 15px;
+  box-shadow: 0 7px 8px 0 rgb(0 0 0 / 60%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+}
+
+.profile-info img {
+  height: 200px;
+}
+
+.modal-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 3rem;
+}
+
 /* Responsive */
 
 @media only screen and (max-width: 1170px) {
