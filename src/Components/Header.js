@@ -5,9 +5,9 @@ import { FaLinkedin } from "react-icons/fa";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 
-const Header = () => {
+const Header = ({ showModal }) => {
     return (
-        <div className="header">
+        <div className={showModal ? "header active-blur" : "header"}>
             <div className="welcome">
                 <div className="heading">
                     <h3>Welcome to Sports Villa &nbsp;</h3>

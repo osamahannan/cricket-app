@@ -5,7 +5,7 @@ import { useMediaQuery } from 'react-responsive'
 import { ImCross } from "react-icons/im";
 import { GiHamburgerMenu } from "react-icons/gi";
 
-const Navbar = ({ showLink, setShowLink }) => {
+const Navbar = ({ showLink, setShowLink, showModal }) => {
 
     const isMobile = useMediaQuery({ query: "(max-width: 750px)" });
     const [showMenu, setShowMenu] = useState(false);
@@ -19,7 +19,7 @@ const Navbar = ({ showLink, setShowLink }) => {
     };
 
     return (
-        <nav className="navbar">
+        <nav className={showModal ? "navbar active-blur" : "navbar"}>
             <div className="logo">
                 <Link to="/" className="annihilator" onClick={() => setShowLink(1)} >
                     <img src={logopic} alt="Annihilators" />

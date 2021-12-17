@@ -8,7 +8,7 @@ import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import ScrollToTop from "./Components/ScrollToTop";
 import ScrollButton from "./Components/ScrollButton";
-import Modal from "./Components/Modal";
+// import Modal from "./Components/Modal";
 
 function App() {
 
@@ -16,34 +16,34 @@ function App() {
   const [showModal, setShowModal] = useState(false);
 
   return (
-    <div className="App">
-      {showModal ? <Modal setShowModal={setShowModal} /> : (
+    <div className={showModal ? "App blur-active" : "App"}>
+      {/* {showModal ? <Modal setShowModal={setShowModal} /> : ( */}
 
-        <Router>
+      <Router>
 
-          <ScrollToTop smooth />
+        <ScrollToTop smooth />
 
-          <Header />
+        <Header showModal={showModal} />
 
-          <Navbar showLink={showLink} setShowLink={setShowLink} />
+        <Navbar showLink={showLink} setShowLink={setShowLink} showModal={showModal} />
 
-          <Routes>
+        <Routes>
 
-            <Route exact path="/" element={<Home />} />
+          <Route exact path="/" element={<Home />} />
 
-            <Route exact path="/funds" element={<Fund />} />
+          <Route exact path="/funds" element={<Fund />} />
 
-            <Route exact path="/team" element={<Team showModal={showModal} setShowModal={setShowModal} />} />
+          <Route exact path="/team" element={<Team showModal={showModal} setShowModal={setShowModal} />} />
 
-          </Routes>
+        </Routes>
 
-          <ScrollButton />
+        <ScrollButton />
 
-          <Footer setShowLink={setShowLink} />
+        <Footer setShowLink={setShowLink} showModal={showModal} />
 
-        </Router>
+      </Router>
 
-      )}
+      {/* )} */}
     </div >
   );
 }

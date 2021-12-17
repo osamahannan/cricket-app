@@ -8,6 +8,11 @@
   font-family: "Baloo Bhai 2", cursive;
 }
 
+.active-blur {
+  filter: blur(8px);
+  transition: 0.3s all ease;
+}
+
 /* Header Section*/
 
 .header {
@@ -763,28 +768,36 @@
 /* Modal Section */
 
 .main-modal {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  border: 1px solid;
-  height: 97vh;
-  filter: blur(8px);
+  /* display: flex;
+  position: fixed;
+  top: 10%;
+  left: 25%; */
+  /* justify-content: center;
+  align-items: center; */
+  /* padding: 10px;
+  border: 1px solid red;
+  height: 100%;
+  width: 100%; */
+  /* width: 100%; */
+  /* height: 97vh; */
+  /* filter: blur(4px);
+  backdrop-filter: blur(8px);
   -webkit-filter: blur(8px);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
 }
 
 .modal-container {
-  position: absolute;
+  position: fixed;
+  top: 30%;
+  left: 12%;
   display: flex;
-  justify-content: center;
   align-items: center;
-  border: 1px solid;
+  border: 1px solid blue;
   padding: 10px;
-  border: 1px solid grey;
-  z-index: 2;
+  background-color: grey;
+  z-index: 1;
 }
 
 .image {

@@ -1,9 +1,11 @@
 import React from 'react'
 import { Players } from "./Players"
+import Fade from 'react-reveal/Fade';
 
 const Modal = ({ setShowModal }) => {
     return (
-        <div className='main-modal'>
+        // <div className='main-modal'>
+        <Fade up>
             <div className="modal-container">
                 <div className="image">
                     <div className="profile-info">
@@ -19,7 +21,8 @@ const Modal = ({ setShowModal }) => {
                 </div>
 
             </div>
-        </div>
+        </Fade>
+        // </div>
     )
 }
 
