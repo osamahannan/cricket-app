@@ -9,7 +9,7 @@ export const Players = [
     {
         id: 2,
         name: "Zain Zaman Khan",
-        image: "Assets/Profile pics/zain4.0.svg",
+        image: "Assets/Profile pics/zain.svg",
         speciality: "Batsman"
     },
     {
@@ -21,7 +21,7 @@ export const Players = [
     {
         id: 4,
         name: "Mohd Faiz",
-        image: "Assets/Profile pics/Faiz3.0.svg",
+        image: "Assets/Profile pics/Faiz.svg",
         speciality: "All Rounder"
     },
     {
@@ -39,7 +39,7 @@ export const Players = [
     {
         id: 7,
         name: "Mohd Rashid",
-        image: "Assets/Profile pics/rashid2.0.svg",
+        image: "Assets/Profile pics/rashid.svg",
         speciality: "All Rounder"
     },
     {

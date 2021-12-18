@@ -808,7 +808,7 @@
 
 #about {
   position: fixed;
-  top: 50px;
+  top: 12%;
   left: 22%;
   z-index: 1;
 }
@@ -818,7 +818,7 @@
   justify-content: space-evenly;
   align-items: center;
   width: 54vw;
-  height: 500px;
+  height: 450px;
   margin: auto;
   margin-top: 60px;
   background-color: rgb(240, 243, 243);
@@ -1128,7 +1128,7 @@
 
 @media only screen and (max-width: 800px) {
   #about {
-    top: 0%;
+    top: -7%;
   }
 
   .cancel {
@@ -1137,12 +1137,12 @@
 
   .about-form {
     flex-direction: column;
-    height: 650px;
+    height: 600px;
     margin-bottom: 40px;
   }
 
   .image {
-    margin-bottom: 3rem;
+    margin: 0 0 2rem 0;
   }
 
   .about-link {
@@ -1385,7 +1385,7 @@
 
   .about-form {
     justify-content: space-between;
-    height: 650px;
+    height: 610px;
   }
 
   .about-link {
@@ -1451,6 +1451,11 @@
   .rank {
     justify-content: space-between;
   }
+
+  #about {
+    top: -7%;
+    left: 20px;
+  }
 }
 
 @media only screen and (max-width: 350px) {
@@ -1458,5 +1463,15 @@
   .player2 {
     height: 330px;
     width: 85vw;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  #about {
+    top: -10%;
+  }
+
+  .about-form {
+    height: 560px;
   }
 }

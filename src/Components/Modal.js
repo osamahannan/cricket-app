@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { Players } from "./Players"
 import Fade from 'react-reveal/Fade';
 
 const Modal = ({ setShowModal, playerData }) => {
@@ -13,7 +12,7 @@ const Modal = ({ setShowModal, playerData }) => {
     return (
         // <div className='main-modal'>
         <Fade up>
-            <div id="about">
+            <div id="about" key={playerData.id}>
                 <form className="about-form">
 
                     <div className="about-link">
@@ -23,10 +22,8 @@ const Modal = ({ setShowModal, playerData }) => {
                             </div>
                         </div>
                         <div className="link-container">
-                            <h4>WORK LINKS</h4>
+                            <h4>SOCIAL LINKS</h4>
 
-                            <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">Linked In</a>
-                            <a href="https://github.com" target="_blank" rel="noreferrer">Github</a>
                             <a href="https://www.instagram.com" target="_blank" rel="noreferrer">Instagram</a>
                             <a href="https://www.facebook.com" target="_blank" rel="noreferrer">Facebook</a>
                             <a href="https://twitter.com" target="_blank" rel="noreferrer">Twitter</a>
@@ -67,10 +64,6 @@ const Modal = ({ setShowModal, playerData }) => {
                                     <p className="profession">osamahannan7@gmail.com</p>
                                 </div>
                                 <div className="detail-field">
-                                    <label className="userid">Phone</label>
-                                    <p className="profession">8181007105</p>
-                                </div>
-                                <div className="detail-field">
                                     <label className="userid">Profession</label>
                                     <p className="profession">cricketer</p>
                                 </div>
@@ -94,10 +87,7 @@ const Modal = ({ setShowModal, playerData }) => {
                                     <label className="userid">English Level</label>
                                     <p className="profession">Expert</p>
                                 </div>
-                                <div className="detail-field">
-                                    <label className="userid">Availability</label>
-                                    <p className="profession">6 Months</p>
-                                </div>
+
                             </div>
                         </div>
 
