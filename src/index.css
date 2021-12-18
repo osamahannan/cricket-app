@@ -1003,6 +1003,20 @@
 
 /* Responsive */
 
+@media only screen and (max-width: 1350px) {
+  .about-details {
+    width: 400px;
+  }
+
+  .profile-info img {
+    height: 175px;
+  }
+
+  .timeline-container {
+    margin-top: 20px;
+  }
+}
+
 @media only screen and (max-width: 1170px) {
   .last,
   .second-last {
@@ -1011,6 +1025,16 @@
 
   .score {
     justify-content: space-around;
+  }
+
+  .about-form {
+    width: 65vw;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .about-form {
+    width: 80vw;
   }
 }
 
@@ -1090,6 +1114,28 @@
 
   .copyright span {
     margin: 0 1rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .about-form {
+    flex-direction: column;
+    height: 750px;
+    margin-bottom: 40px;
+  }
+
+  .about-link {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 400px;
+  }
+
+  .about-details {
+    margin-top: -40px;
+  }
+
+  .rank {
+    flex-direction: row;
   }
 }
 
@@ -1229,6 +1275,14 @@
   .player2 {
     height: 262px;
   }
+
+  .about-form {
+    width: 85vw;
+  }
+
+  .rank {
+    flex-direction: row;
+  }
 }
 
 @media only screen and (max-width: 450px) {
@@ -1307,6 +1361,33 @@
   .scroll-button {
     right: 25px;
   }
+
+  .about-form {
+    justify-content: space-between;
+    height: 650px;
+  }
+
+  .about-link {
+    justify-content: space-around;
+    align-items: center;
+    width: 80vw;
+  }
+
+  .about-details {
+    width: 80vw;
+  }
+
+  .rank {
+    justify-content: space-around;
+  }
+
+  .timeline-container {
+    width: 76vw;
+  }
+
+  .timeline-navbar {
+    width: 75vw;
+  }
 }
 
 @media only screen and (max-width: 400px) {
@@ -1336,6 +1417,18 @@
 
   .profile img {
     height: 100px;
+  }
+
+  .about-form {
+    width: 90vw;
+  }
+
+  .profile-info img {
+    height: 140px;
+  }
+
+  .rank {
+    justify-content: space-between;
   }
 }
 
