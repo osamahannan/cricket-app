@@ -856,6 +856,10 @@
   /* border: 1px solid red; */
 }
 
+.cancel {
+  margin-right: 3rem;
+}
+
 .profile-info {
   display: flex;
   justify-content: center;
@@ -1033,6 +1037,11 @@
 }
 
 @media only screen and (max-width: 950px) {
+  #about {
+    top: 25px;
+    left: 10%;
+  }
+
   .about-form {
     width: 80vw;
   }
@@ -1118,10 +1127,22 @@
 }
 
 @media only screen and (max-width: 800px) {
+  #about {
+    top: 0%;
+  }
+
+  .cancel {
+    margin-right: 0;
+  }
+
   .about-form {
     flex-direction: column;
-    height: 750px;
+    height: 650px;
     margin-bottom: 40px;
+  }
+
+  .image {
+    margin-bottom: 3rem;
   }
 
   .about-link {

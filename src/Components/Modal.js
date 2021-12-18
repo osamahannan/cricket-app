@@ -41,7 +41,7 @@ const Modal = ({ setShowModal, playerData }) => {
                                 <p>RANKING: <span>1/10</span></p>
                             </div>
                             <div onClick={() => setShowModal(false)}>
-                                <button className="btn">Cancel</button>
+                                <button className="btn cancel">Cancel</button>
                             </div>
                         </div>
 
