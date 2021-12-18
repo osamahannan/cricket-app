@@ -8,7 +8,6 @@ import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import ScrollToTop from "./Components/ScrollToTop";
 import ScrollButton from "./Components/ScrollButton";
-// import Modal from "./Components/Modal";
 
 function App() {
 
@@ -17,7 +16,6 @@ function App() {
 
   return (
     <div className={showModal ? "App blur-active" : "App"}>
-      {/* {showModal ? <Modal setShowModal={setShowModal} /> : ( */}
 
       <Router>
 
@@ -43,7 +41,6 @@ function App() {
 
       </Router>
 
-      {/* )} */}
     </div >
   );
 }

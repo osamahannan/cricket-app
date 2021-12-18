@@ -1398,6 +1398,11 @@
     width: 80vw;
   }
 
+  .cancel {
+    font-size: 15px;
+    padding: 5px 15px;
+  }
+
   .rank {
     justify-content: space-around;
   }
@@ -1464,11 +1469,15 @@
     height: 330px;
     width: 85vw;
   }
+
+  .profile-info img {
+    height: 130px;
+  }
 }
 
 @media only screen and (max-width: 330px) {
   #about {
-    top: -10%;
+    top: -3%;
   }
 
   .about-form {
