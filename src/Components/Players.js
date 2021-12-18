@@ -3,77 +3,92 @@ export const Players = [
     {
         id: 1,
         name: "Minhaj Ahmad Khan",
-        url: "Assets/Profile pics/Minhaj.svg"
+        image: "Assets/Profile pics/Minhaj.svg",
+        speciality: "All Rounder"
     },
     {
         id: 2,
         name: "Zain Zaman Khan",
-        url: "Assets/Profile pics/zain4.0.svg"
+        image: "Assets/Profile pics/zain4.0.svg",
+        speciality: "Batsman"
     },
     {
         id: 3,
         name: "Osama Hannan",
-        url: "Assets/Profile pics/Osama.svg"
+        image: "Assets/Profile pics/Osama.svg",
+        speciality: "Batsman"
     },
     {
         id: 4,
         name: "Mohd Faiz",
-        url: "Assets/Profile pics/Faiz3.0.svg"
+        image: "Assets/Profile pics/Faiz3.0.svg",
+        speciality: "All Rounder"
     },
     {
         id: 5,
         name: "Asad Raiyan",
-        url: "Assets/Profile pics/asad.svg"
+        image: "Assets/Profile pics/asad.svg",
+        speciality: "Batsman"
     },
     {
         id: 6,
         name: "Syed Faraz",
-        url: "Assets/Profile pics/syed.svg"
+        image: "Assets/Profile pics/syed.svg",
+        speciality: "All Rounder"
     },
     {
         id: 7,
         name: "Mohd Rashid",
-        url: "Assets/Profile pics/rashid2.0.svg"
+        image: "Assets/Profile pics/rashid2.0.svg",
+        speciality: "All Rounder"
     },
     {
         id: 8,
         name: "Atif Shaikh",
-        url: "Assets/Profile pics/atif.svg"
+        image: "Assets/Profile pics/atif.svg",
+        speciality: "All Rounder"
     },
     {
         id: 9,
         name: "Shahbaz Ahmad Khan",
-        url: "Assets/Profile pics/shahbaz.svg"
+        image: "Assets/Profile pics/shahbaz.svg",
+        speciality: "All Rounder"
     },
     {
         id: 10,
         name: "Irfan Khan",
-        url: "Assets/Profile pics/Irfan.svg"
+        image: "Assets/Profile pics/Irfan.svg",
+        speciality: "All Rounder"
     },
     {
         id: 11,
         name: "Intzar Khan",
-        url: "Assets/Profile pics/Intzar.svg"
+        image: "Assets/Profile pics/Intzar.svg",
+        speciality: "Bowler"
     },
     {
         id: 12,
         name: "Sajid Khan",
-        url: "Assets/Profile pics/sajid.svg"
+        image: "Assets/Profile pics/sajid.svg",
+        speciality: "Batsman"
     },
     {
         id: 13,
         name: "Sameer Khan",
-        url: "Assets/Profile pics/sameer.svg"
+        image: "Assets/Profile pics/sameer.svg",
+        speciality: "Batsman"
     },
     {
         id: 14,
         name: "Shareef Gazi",
-        url: "Assets/Profile pics/shareef.svg"
+        image: "Assets/Profile pics/shareef.svg",
+        speciality: "Batsman"
     },
     {
         id: 15,
         name: "Tahir Ali",
-        url: "Assets/Profile pics/tahir.svg"
+        image: "Assets/Profile pics/tahir.svg",
+        speciality: "Batsman"
     }
 
 

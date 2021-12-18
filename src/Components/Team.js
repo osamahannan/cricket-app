@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Fade from 'react-reveal/Fade';
 import Flip from 'react-reveal/Flip';
 import { Players } from "./Players"
@@ -6,6 +6,8 @@ import Modal from "./Modal";
 
 
 const Team = ({ showModal, setShowModal }) => {
+
+    const [playerData, setPlayerData] = useState({});
 
     return (
         <>
@@ -18,10 +20,10 @@ const Team = ({ showModal, setShowModal }) => {
 
                         {Players.map((player) => {
                             return (
-                                <Flip right><div className="card-container" key={player.id} onClick={() => setShowModal(true)}>
+                                <Flip right><div className="card-container" key={player.id} onClick={() => { setShowModal(true); setPlayerData(player) }}>
                                     <div className="player-card">
                                         <div className="profile">
-                                            <img src={player.url} alt="Profile Pic" />
+                                            <img src={player.image} alt="Profile Pic" />
                                         </div>
                                         <span className="player-card-name">{player.name}</span>
                                     </div>
@@ -35,7 +37,7 @@ const Team = ({ showModal, setShowModal }) => {
                 </div>
             </div >
 
-            {showModal && <Modal setShowModal={setShowModal} />}
+            {showModal && <Modal setShowModal={setShowModal} playerData={playerData} />}
 
         </>
 
