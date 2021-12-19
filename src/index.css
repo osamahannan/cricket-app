@@ -1128,7 +1128,7 @@
 
 @media only screen and (max-width: 800px) {
   #about {
-    top: -7%;
+    top: -3%;
   }
 
   .cancel {
@@ -1304,6 +1304,10 @@
   .rank {
     flex-direction: row;
   }
+
+  #about {
+    top: -5%;
+  }
 }
 
 @media only screen and (max-width: 450px) {
@@ -1458,7 +1462,7 @@
   }
 
   #about {
-    top: -7%;
+    top: -6%;
     left: 20px;
   }
 }
@@ -1477,7 +1481,7 @@
 
 @media only screen and (max-width: 330px) {
   #about {
-    top: -3%;
+    top: -1%;
   }
 
   .about-form {

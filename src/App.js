@@ -15,7 +15,7 @@ function App() {
   const [showModal, setShowModal] = useState(false);
 
   return (
-    <div className={showModal ? "App blur-active" : "App"}>
+    <div className="App">
 
       <Router>
 
