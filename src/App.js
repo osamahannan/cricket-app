@@ -19,7 +19,7 @@ function App() {
 
       <Router>
 
-        <ScrollToTop smooth />
+        <ScrollToTop />
 
         <Header showModal={showModal} />
 

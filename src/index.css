@@ -767,45 +767,6 @@
 
 /* Modal Section */
 
-/* .modal-container {
-  position: fixed;
-  top: 30%;
-  left: 12%;
-  display: flex;
-  align-items: center;
-  border: 1px solid blue;
-  padding: 10px;
-  background-color: grey;
-  z-index: 1;
-}
-
-.image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 1rem 2rem;
-}
-
-.profile-info {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 200px;
-  padding: 15px;
-  box-shadow: 0 7px 8px 0 rgb(0 0 0 / 60%), 0 4px 20px 0 rgb(0 0 0 / 19%);
-}
-
-.profile-info img {
-  height: 200px;
-}
-
-.modal-info {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 1rem 3rem;
-} */
-
 #about {
   position: fixed;
   top: 12%;
@@ -830,8 +791,6 @@
   display: flex;
   flex-direction: column;
   padding: 20px;
-  /* margin-top: 5px; */
-  /* border: 1px solid; */
 }
 
 .about-link a {
@@ -1461,8 +1420,12 @@
     justify-content: space-between;
   }
 
+  .about-form {
+    height: 565px;
+  }
+
   #about {
-    top: -6%;
+    top: -2%;
     left: 20px;
   }
 }
