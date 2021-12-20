@@ -685,7 +685,7 @@
 
 .card-container {
   display: flex;
-  height: 256px;
+  height: 266px;
   width: 238px;
   margin: 1rem 1.5rem;
   justify-content: center;
@@ -694,7 +694,7 @@
 .player-card {
   justify-content: space-around;
   background-color: rgb(248, 246, 246);
-  height: 255px;
+  height: 265px;
   width: 230px;
   cursor: pointer;
 }
@@ -786,8 +786,12 @@
 
 #about {
   position: fixed;
-  top: 12%;
-  left: 22%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  height: 100%;
+  width: 100%;
   z-index: 1;
 }
 
@@ -797,8 +801,6 @@
   align-items: center;
   width: 54vw;
   height: 450px;
-  margin: auto;
-  margin-top: 60px;
   background-color: rgb(240, 243, 243);
   border-radius: 16px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -829,7 +831,6 @@
   justify-content: center;
   align-items: center;
   margin: 1rem 0;
-  /* border: 1px solid red; */
 }
 
 .cancel {
@@ -1013,11 +1014,6 @@
 }
 
 @media only screen and (max-width: 950px) {
-  #about {
-    top: 25px;
-    left: 10%;
-  }
-
   .about-form {
     width: 80vw;
   }
@@ -1103,17 +1099,13 @@
 }
 
 @media only screen and (max-width: 800px) {
-  #about {
-    top: -3%;
-  }
-
   .cancel {
     margin-right: 0;
   }
 
   .about-form {
     flex-direction: column;
-    height: 600px;
+    height: 625px;
     margin-bottom: 40px;
   }
 
@@ -1280,10 +1272,6 @@
   .rank {
     flex-direction: row;
   }
-
-  #about {
-    top: -5%;
-  }
 }
 
 @media only screen and (max-width: 450px) {
@@ -1365,7 +1353,11 @@
 
   .about-form {
     justify-content: space-between;
-    height: 610px;
+    height: 630px;
+  }
+
+  .profile-info img {
+    height: 155px;
   }
 
   .about-link {
@@ -1438,12 +1430,7 @@
   }
 
   .about-form {
-    height: 540px;
-  }
-
-  #about {
-    top: -2%;
-    left: 20px;
+    height: 575px;
   }
 }
 
@@ -1460,11 +1447,11 @@
 }
 
 @media only screen and (max-width: 330px) {
-  #about {
-    top: -1%;
-  }
-
   .about-form {
     height: 560px;
+  }
+
+  .profile-info img {
+    height: 95px;
   }
 }

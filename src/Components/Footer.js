@@ -12,7 +12,7 @@ import Fade from 'react-reveal/Fade';
 const Footer = ({ setShowLink, showModal }) => {
 
     return (
-        <div className={showModal ? "footer active-blur" : "footer"}>
+        <div className={showModal ? "footer active-blur" : "footer"} >
             <div className="footer-container">
                 <Fade left><div className="team11">
                     <Link to="/" className="annihilator2" onClick={setShowLink(1)}>

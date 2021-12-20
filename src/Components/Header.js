@@ -7,7 +7,7 @@ import { MdEmail } from "react-icons/md";
 
 const Header = ({ showModal }) => {
     return (
-        <div className={showModal ? "header active-blur" : "header"}>
+        <div className={showModal ? "header active-blur" : "header"} >
             <div className="welcome">
                 <div className="heading">
                     <h3>Welcome to Sports Villa &nbsp;</h3>

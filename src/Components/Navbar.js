@@ -21,7 +21,7 @@ const Navbar = ({ showModal }) => {
     console.log(showLink);
 
     return (
-        <nav className={showModal ? "navbar active-blur" : "navbar"}>
+        <nav className={showModal ? "navbar active-blur" : "navbar"} >
             <div className="logo">
                 <Link to="/" className="annihilator" onClick={() => setShowLink(1)} >
                     <img src={logopic} alt="Annihilators" />

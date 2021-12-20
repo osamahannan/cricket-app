@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Fade from 'react-reveal/Fade';
 
-const Modal = ({ setShowModal, playerData }) => {
+const Modal = ({ setShowModal, playerData, showModal }) => {
 
     const [toggleState, setToggleState] = useState(1);
 
@@ -10,10 +10,9 @@ const Modal = ({ setShowModal, playerData }) => {
     }
 
     return (
-        // <div className='main-modal'>
         <Fade up>
-            <div id="about" key={playerData.id}>
-                <form className="about-form">
+            <div id="about" key={playerData.id} >
+                <form className="about-form" >
 
                     <div className="about-link">
                         <div className="image">
@@ -64,6 +63,10 @@ const Modal = ({ setShowModal, playerData }) => {
                                     <p className="profession">osamahannan7@gmail.com</p>
                                 </div>
                                 <div className="detail-field">
+                                    <label className="userid">Phone</label>
+                                    <p className="profession">8181007105</p>
+                                </div>
+                                <div className="detail-field">
                                     <label className="userid">Profession</label>
                                     <p className="profession">cricketer</p>
                                 </div>
@@ -87,6 +90,10 @@ const Modal = ({ setShowModal, playerData }) => {
                                     <label className="userid">English Level</label>
                                     <p className="profession">Expert</p>
                                 </div>
+                                <div className="detail-field">
+                                    <label className="userid">Availability</label>
+                                    <p className="profession">Weekends</p>
+                                </div>
 
                             </div>
                         </div>
@@ -95,7 +102,6 @@ const Modal = ({ setShowModal, playerData }) => {
                 </form>
             </div>
         </Fade>
-        // </div>
     )
 }
 
