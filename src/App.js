@@ -11,7 +11,7 @@ import ScrollButton from "./Components/ScrollButton";
 
 function App() {
 
-  const [showLink, setShowLink] = useState(1);
+  const [activeLink, setActiveLink] = useState(1);
   const [showModal, setShowModal] = useState(false);
 
   return (
@@ -23,7 +23,7 @@ function App() {
 
         <Header showModal={showModal} />
 
-        <Navbar showLink={showLink} setShowLink={setShowLink} showModal={showModal} />
+        <Navbar showLink={activeLink} setShowLink={setActiveLink} showModal={showModal} />
 
         <Routes>
 
@@ -37,7 +37,7 @@ function App() {
 
         <ScrollButton />
 
-        <Footer setShowLink={setShowLink} showModal={showModal} />
+        <Footer setShowLink={setActiveLink} showModal={showModal} />
 
       </Router>
 
