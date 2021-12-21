@@ -17,12 +17,11 @@ const Fund = () => {
     // const navigate = useNavigate();
 
     const [user, setUser] = useState({
-        name: "", email: "", phone: "", work: "", password: "", cpassword: ""
+        team: "", date: "", toss: "", result: "", cost: "", opponent_score: "", opponent_over: "", annihilators_score: "", annihilators_over: ""
     });
 
     let name, value;
     const handleInputs = (e) => {
-        // console.log(e);
         name = e.target.name;
         value = e.target.value;
         setUser({ ...user, [name]: value })
@@ -75,11 +74,11 @@ const Fund = () => {
 
                             <form method="POST" className="register-form" id="register-form">
                                 <div className="form-group">
-                                    <label htmlFor="name">
+                                    <label htmlFor="team">
                                         <AiOutlineTeam />
                                     </label>
-                                    <input type="text" name="name" id="name" autoComplete="off"
-                                        value={user.name}
+                                    <input type="text" name="team" id="team" autoComplete="off"
+                                        value={user.team}
                                         onChange={handleInputs}
                                         placeholder="Team Name" />
                                 </div>
@@ -88,7 +87,7 @@ const Fund = () => {
                                         <BsCalendar2Date />
                                     </label>
                                     <input type="date" name="date" id="date" autoComplete="off"
-                                        value={user.name}
+                                        value={user.date}
                                         onChange={handleInputs}
                                         placeholder="Date" />
                                 </div>
@@ -97,7 +96,7 @@ const Fund = () => {
                                         <GiCoinflip />
                                     </label>
                                     <input type="text" name="toss" id="toss" autoComplete="off"
-                                        value={user.work}
+                                        value={user.toss}
                                         onChange={handleInputs}
                                         placeholder="Toss Result" />
                                 </div>
@@ -106,7 +105,7 @@ const Fund = () => {
                                         <MdSportsCricket />
                                     </label>
                                     <input type="text" name="result" id="result" autoComplete="off"
-                                        value={user.email}
+                                        value={user.result}
                                         onChange={handleInputs}
                                         placeholder="Match Result" />
                                 </div>
@@ -115,43 +114,43 @@ const Fund = () => {
                                         <BiRupee />
                                     </label>
                                     <input type="number" name="cost" id="cost" autoComplete="off"
-                                        value={user.phone}
+                                        value={user.cost}
                                         onChange={handleInputs}
                                         placeholder="Match Cost" />
                                 </div>
                                 <div className="form-group">
-                                    <label htmlFor="opponent-score">
+                                    <label htmlFor="opponent_score">
                                         <GrScorecard />
                                     </label>
-                                    <input type="text" name="opponent-score" id="password" autoComplete="off"
-                                        value={user.password}
+                                    <input type="text" name="opponent_score" id="opponent_score" autoComplete="off"
+                                        value={user.opponent_score}
                                         onChange={handleInputs}
                                         placeholder="Opponent's Score" />
                                 </div>
                                 <div className="form-group">
-                                    <label htmlFor="opponent-over">
+                                    <label htmlFor="opponent_over">
                                         <IoTennisball />
                                     </label>
-                                    <input type="number" name="opponent-over" id="password" autoComplete="off"
-                                        value={user.password}
+                                    <input type="number" name="opponent_over" id="opponent_over" autoComplete="off"
+                                        value={user.opponent_over}
                                         onChange={handleInputs}
                                         placeholder="Opponent's Over" />
                                 </div>
                                 <div className="form-group">
-                                    <label htmlFor="annihilators-score">
+                                    <label htmlFor="annihilators_score">
                                         <GrScorecard />
                                     </label>
-                                    <input type="text" name="annihilators-score" id="cpassword" autoComplete="off"
-                                        value={user.cpassword}
+                                    <input type="text" name="annihilators_score" id="annihilators_score" autoComplete="off"
+                                        value={user.annihilators_score}
                                         onChange={handleInputs}
                                         placeholder="Annihilator's Score" />
                                 </div>
                                 <div className="form-group">
-                                    <label htmlFor="annihilators-over">
+                                    <label htmlFor="annihilators_over">
                                         <IoTennisballOutline />
                                     </label>
-                                    <input type="number" name="annihilators-over" id="cpassword" autoComplete="off"
-                                        value={user.cpassword}
+                                    <input type="number" name="annihilators_over" id="annihilators_over" autoComplete="off"
+                                        value={user.annihilators_over}
                                         onChange={handleInputs}
                                         placeholder="Annihilator's over" />
                                 </div>
