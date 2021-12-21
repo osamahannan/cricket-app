@@ -162,7 +162,7 @@ const Fund = ({ setShowModal }) => {
                             </form>
 
                             <div className="button">
-                                <button type="submit" name="signup" id="signup" className="btn" value="register" >Register</button>
+                                <button type="submit" name="signup" id="signup" className="btn" value="register" >Submit</button>
                             </div>
 
                         </div>
