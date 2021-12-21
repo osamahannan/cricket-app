@@ -29,7 +29,7 @@ function App() {
 
           <Route exact path="/" element={<Home setShowModal={setShowModal} />} />
 
-          <Route exact path="/funds" element={<Fund />} />
+          <Route exact path="/funds" element={<Fund setShowModal={setShowModal} />} />
 
           <Route exact path="/team" element={<Team showModal={showModal} setShowModal={setShowModal} />} />
 

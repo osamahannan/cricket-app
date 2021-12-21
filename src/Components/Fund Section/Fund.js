@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom';
 import { GiCoinflip } from "react-icons/gi";
 import { BsCalendar2Date } from "react-icons/bs";
@@ -12,7 +12,11 @@ import signpic from "./signup.png";
 import Fade from 'react-reveal/Fade';
 import "./fund.css"
 
-const Fund = () => {
+const Fund = ({ setShowModal }) => {
+
+    useEffect(() => {
+        setShowModal(false);
+    }, [setShowModal])
 
     // const navigate = useNavigate();
 
