@@ -22,7 +22,7 @@
 
 .form-group {
   display: flex;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid grey;
   margin-bottom: 16px;
   align-items: center;
 }
@@ -32,7 +32,7 @@
 }
 
 .form-group input {
-  padding-left: 10px;
+  padding: 0 0 3px 10px;
   border: none;
   background-color: unset;
   outline: none;

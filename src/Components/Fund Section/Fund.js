@@ -71,7 +71,7 @@ const Fund = () => {
 
                     <Fade left>
                         <div className="register-container">
-                            <h1>Sign Up</h1>
+                            <h1>Score Card</h1>
 
                             <form method="POST" className="register-form" id="register-form">
                                 <div className="form-group">
@@ -84,73 +84,73 @@ const Fund = () => {
                                         placeholder="Team Name" />
                                 </div>
                                 <div className="form-group">
-                                    <label htmlFor="name">
+                                    <label htmlFor="date">
                                         <BsCalendar2Date />
                                     </label>
-                                    <input type="date" name="name" id="name" autoComplete="off"
+                                    <input type="date" name="date" id="date" autoComplete="off"
                                         value={user.name}
                                         onChange={handleInputs}
                                         placeholder="Date" />
                                 </div>
                                 <div className="form-group">
-                                    <label htmlFor="work">
+                                    <label htmlFor="toss">
                                         <GiCoinflip />
                                     </label>
-                                    <input type="text" name="work" id="work" autoComplete="off"
+                                    <input type="text" name="toss" id="toss" autoComplete="off"
                                         value={user.work}
                                         onChange={handleInputs}
                                         placeholder="Toss Result" />
                                 </div>
                                 <div className="form-group">
-                                    <label htmlFor="name">
+                                    <label htmlFor="result">
                                         <MdSportsCricket />
                                     </label>
-                                    <input type="email" name="email" id="email" autoComplete="off"
+                                    <input type="text" name="result" id="result" autoComplete="off"
                                         value={user.email}
                                         onChange={handleInputs}
                                         placeholder="Match Result" />
                                 </div>
                                 <div className="form-group">
-                                    <label htmlFor="phone">
+                                    <label htmlFor="cost">
                                         <BiRupee />
                                     </label>
-                                    <input type="number" name="phone" id="phone" autoComplete="off"
+                                    <input type="number" name="cost" id="cost" autoComplete="off"
                                         value={user.phone}
                                         onChange={handleInputs}
                                         placeholder="Match Cost" />
                                 </div>
                                 <div className="form-group">
-                                    <label htmlFor="password">
+                                    <label htmlFor="opponent-score">
                                         <GrScorecard />
                                     </label>
-                                    <input type="password" name="password" id="password" autoComplete="off"
+                                    <input type="text" name="opponent-score" id="password" autoComplete="off"
                                         value={user.password}
                                         onChange={handleInputs}
                                         placeholder="Opponent's Score" />
                                 </div>
                                 <div className="form-group">
-                                    <label htmlFor="password">
+                                    <label htmlFor="opponent-over">
                                         <IoTennisball />
                                     </label>
-                                    <input type="password" name="password" id="password" autoComplete="off"
+                                    <input type="number" name="opponent-over" id="password" autoComplete="off"
                                         value={user.password}
                                         onChange={handleInputs}
                                         placeholder="Opponent's Over" />
                                 </div>
                                 <div className="form-group">
-                                    <label htmlFor="cpassword">
+                                    <label htmlFor="annihilators-score">
                                         <GrScorecard />
                                     </label>
-                                    <input type="password" name="cpassword" id="cpassword" autoComplete="off"
+                                    <input type="text" name="annihilators-score" id="cpassword" autoComplete="off"
                                         value={user.cpassword}
                                         onChange={handleInputs}
                                         placeholder="Annihilator's Score" />
                                 </div>
                                 <div className="form-group">
-                                    <label htmlFor="cpassword">
+                                    <label htmlFor="annihilators-over">
                                         <IoTennisballOutline />
                                     </label>
-                                    <input type="password" name="cpassword" id="cpassword" autoComplete="off"
+                                    <input type="number" name="annihilators-over" id="cpassword" autoComplete="off"
                                         value={user.cpassword}
                                         onChange={handleInputs}
                                         placeholder="Annihilator's over" />
