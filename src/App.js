@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./Components/Navbar";
 import Home from "./Components/Home";
-import Fund from "./Components/Fund";
+import Fund from "./Components/Fund Section/Fund";
 import Team from "./Components/Team";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
@@ -27,7 +27,7 @@ function App() {
 
         <Routes>
 
-          <Route exact path="/" element={<Home />} />
+          <Route exact path="/" element={<Home setShowModal={setShowModal} />} />
 
           <Route exact path="/funds" element={<Fund />} />
 

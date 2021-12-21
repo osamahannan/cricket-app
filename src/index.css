@@ -502,6 +502,7 @@
   justify-content: space-around;
   background-color: rgb(248, 246, 246);
   min-height: 1000px;
+  margin-bottom: 1rem;
 }
 
 .opponent-teams h1 {
@@ -1147,7 +1148,7 @@
     top: 0;
     height: 100%;
     background-color: rgb(230, 228, 228);
-    width: 54%;
+    width: 56%;
     transition: 0.3s all ease;
     border-radius: 0 0 15px 0;
     padding-top: 20px;
@@ -1231,6 +1232,10 @@
   .team11,
   .footer-contact {
     width: 70vw;
+  }
+
+  .team11 {
+    margin: 2rem 0 1rem 0;
   }
 
   .copyright {
@@ -1386,6 +1391,10 @@
 
   .timeline-navbar {
     width: 75vw;
+  }
+
+  .footer-heading h1 {
+    font-size: 1.5rem;
   }
 }
 

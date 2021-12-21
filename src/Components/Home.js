@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Fade from 'react-reveal/Fade';
 import Flip from 'react-reveal/Flip';
 import { useMediaQuery } from 'react-responsive'
@@ -7,9 +7,13 @@ import { FaQuoteLeft } from "react-icons/fa";
 import cricketbg from "../backgrounds/cricketbg.jpg";
 import winlogo from "../backgrounds/teamlogo2.png";
 
-const Home = () => {
+const Home = ({ setShowModal }) => {
 
     const isMobile = useMediaQuery({ query: "(max-width: 750px)" });
+
+    useEffect(() => {
+        setShowModal(false);
+    }, [])
 
     return (
         <div className="home">

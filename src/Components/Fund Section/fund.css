@@ -1,0 +1,155 @@
+.register {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 54vw;
+  height: 670px;
+  margin: 4rem auto;
+  background-color: rgb(250 253 253);
+  border-radius: 16px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.register-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.register-container h1 {
+  margin-bottom: 25px;
+}
+
+.form-group {
+  display: flex;
+  border-bottom: 1px solid black;
+  margin-bottom: 16px;
+  align-items: center;
+}
+
+.form-group label {
+  padding: 3px;
+}
+
+.form-group input {
+  padding-left: 10px;
+  border: none;
+  background-color: unset;
+  outline: none;
+  width: 250px;
+  font-size: 16px;
+}
+
+.button {
+  margin-top: 10px;
+}
+
+.btn {
+  display: flex;
+  padding: 10px 25px;
+  background-color: rgb(43, 128, 238);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.signup-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-;
+  align-items: center;
+}
+
+.signimage {
+  width: 264px;
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+.signup-link {
+  color: rgb(43, 128, 238);
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+.signup-link:hover {
+  color: rgb(6, 79, 175);
+}
+
+.next-link {
+  display: flex;
+}
+
+/* Resposive */
+
+@media only screen and (max-width: 1350px) {
+  .register {
+    width: 60vw;
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  .register {
+    width: 70vw;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .register {
+    width: 78vw;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .form-group input {
+    width: 23vw;
+  }
+
+  .signimage {
+    width: 231px;
+    height: 177px;
+  }
+}
+
+@media only screen and (max-width: 670px) {
+  .register {
+    flex-direction: column;
+    height: 900px;
+    margin: 40px auto;
+  }
+
+  .form-group input {
+    width: 35vw;
+  }
+
+  .next-link {
+    margin-bottom: 1rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .register {
+    width: 90vw;
+  }
+
+  .form-group input {
+    width: 40vw;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .form-group input {
+    width: 50vw;
+  }
+
+  #signup {
+    padding: 5px 15px;
+  }
+
+  .signimage {
+    width: 200px;
+    height: 150px;
+  }
+}
