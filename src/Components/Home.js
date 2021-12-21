@@ -13,7 +13,7 @@ const Home = ({ setShowModal }) => {
 
     useEffect(() => {
         setShowModal(false);
-    }, [])
+    }, [setShowModal])
 
     return (
         <div className="home">
