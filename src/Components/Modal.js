@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Fade from 'react-reveal/Fade';
 
-const Modal = ({ setShowModal, playerData, showModal }) => {
+const Modal = ({ setShowModal, playerData }) => {
 
     const [toggleState, setToggleState] = useState(1);
 
@@ -23,9 +23,9 @@ const Modal = ({ setShowModal, playerData, showModal }) => {
                         <div className="link-container">
                             <h4>SOCIAL LINKS</h4>
 
-                            <a href="https://www.instagram.com" target="_blank" rel="noreferrer">Instagram</a>
-                            <a href="https://www.facebook.com" target="_blank" rel="noreferrer">Facebook</a>
-                            <a href="https://twitter.com" target="_blank" rel="noreferrer">Twitter</a>
+                            <a href={playerData.instagram} target="_blank" rel="noreferrer">Instagram</a>
+                            <a href={playerData.facebook} target="_blank" rel="noreferrer">Facebook</a>
+                            <a href={playerData.twitter} target="_blank" rel="noreferrer">Twitter</a>
                         </div>
                     </div>
 
@@ -64,7 +64,7 @@ const Modal = ({ setShowModal, playerData, showModal }) => {
                                 </div>
                                 <div className="detail-field">
                                     <label className="userid">Phone</label>
-                                    <p className="profession">8181007105</p>
+                                    <p className="profession">{playerData.phone}</p>
                                 </div>
                                 <div className="detail-field">
                                     <label className="userid">Profession</label>

@@ -40,6 +40,12 @@
   font-size: 16px;
 }
 
+.dropown-label {
+  height: auto;
+  outline: none;
+  border: none;
+}
+
 .button {
   margin-top: 10px;
 }
