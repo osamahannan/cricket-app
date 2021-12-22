@@ -22,7 +22,7 @@ const Team = ({ showModal, setShowModal }) => {
 
                         {Players.map((player) => {
                             return (
-                                <Flip right><div className="card-container" key={player.id} onClick={() => { setShowModal(!showModal); setPlayerData(player) }}>
+                                <Flip right><div className="card-container noSelect" key={player.id} onClick={() => { setShowModal(!showModal); setPlayerData(player) }}>
                                     <div className="player-card">
                                         <div className="profile">
                                             <img src={player.image} alt="Profile Pic" />

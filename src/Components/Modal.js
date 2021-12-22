@@ -60,7 +60,7 @@ const Modal = ({ setShowModal, playerData }) => {
                                 </div>
                                 <div className="detail-field">
                                     <label className="userid">Email</label>
-                                    <p className="profession">osamahannan7@gmail.com</p>
+                                    <p className="profession">{playerData.email}</p>
                                 </div>
                                 <div className="detail-field">
                                     <label className="userid">Phone</label>

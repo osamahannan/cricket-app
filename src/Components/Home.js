@@ -128,7 +128,7 @@ const Home = ({ setShowModal }) => {
 
                     {Opponent.map(opponent => {
                         return (
-                            <Flip right><div className="column">
+                            <Flip right><div className="column noSelect">
                                 <div className="logos">
                                     <img src={opponent.url} alt="team_logo 7" />
                                     <h2>{opponent.name}</h2>

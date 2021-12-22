@@ -11,12 +11,29 @@ import { GrScorecard } from "react-icons/gr";
 import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
+// import { useTheme } from '@mui/material/styles';
 import Select from '@mui/material/Select';
 import signpic from "./signup.png";
 import Fade from 'react-reveal/Fade';
 import "./fund.css"
 
 const Fund = ({ setShowModal }) => {
+
+    // const theme = useTheme();
+
+    // const styles = theme => ({
+    //     select: {
+    //         '&:before': {
+    //             borderColor: "red",
+    //         },
+    //         '&:after': {
+    //             borderColor: "black",
+    //         }
+    //     },
+    //     icon: {
+    //         fill: "yellow",
+    //     },
+    // });
 
     useEffect(() => {
         setShowModal(false);
@@ -102,9 +119,10 @@ const Fund = ({ setShowModal }) => {
                                 <label htmlFor="toss">
                                     <GiCoinflip />
                                 </label>
-                                <FormControl className='dropown-label'>
+                                <FormControl fullWidth className='dropown-label'>
                                     <InputLabel id="demo-simple-select-label">Age</InputLabel>
                                     <Select
+                                        border="none"
                                         labelId="demo-simple-select-label"
                                         id="demo-simple-select"
                                         value={user.toss}
