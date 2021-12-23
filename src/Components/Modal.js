@@ -64,11 +64,11 @@ const Modal = ({ setShowModal, playerData }) => {
                                 </div>
                                 <div className="detail-field">
                                     <label className="userid">Phone</label>
-                                    <p className="profession">{playerData.phone}</p>
+                                    <a href={`tel:${playerData.phone}`} cm_dontconvertlink>{playerData.phone}</a>
                                 </div>
                                 <div className="detail-field">
                                     <label className="userid">Profession</label>
-                                    <p className="profession">cricketer</p>
+                                    <p className="profession">Cricketer</p>
                                 </div>
                             </div>
 

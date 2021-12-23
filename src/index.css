@@ -990,6 +990,11 @@
   padding-left: 14px;
 }
 
+.detail-field a {
+  text-decoration: none;
+  color: rgb(43, 128, 238);
+}
+
 .userid {
   color: rgb(43, 43, 44);
 }
