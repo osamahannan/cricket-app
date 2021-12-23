@@ -8,16 +8,42 @@ import { IoTennisball } from "react-icons/io5";
 import { IoTennisballOutline } from "react-icons/io5";
 import { BiRupee } from "react-icons/bi";
 import { GrScorecard } from "react-icons/gr";
-import InputLabel from '@mui/material/InputLabel';
-import MenuItem from '@mui/material/MenuItem';
-import FormControl from '@mui/material/FormControl';
-// import { useTheme } from '@mui/material/styles';
-import Select from '@mui/material/Select';
+import TextField from "@material-ui/core/TextField";
+import MenuItem from "@material-ui/core/MenuItem";
+import { makeStyles } from "@material-ui/core/styles";
 import signpic from "./signup.png";
 import Fade from 'react-reveal/Fade';
 import "./fund.css"
 
+const useStyles = makeStyles({
+    root: {
+
+        "min-width": 260,
+        "& .MuiOutlinedInput-input": {
+            display: "flex",
+            alignItems: "center",
+            color: "black",
+            border: "unset",
+            padding: "0px",
+            height: "40px",
+            paddingLeft: "10px",
+        },
+        "& .MuiInputLabel-root": {
+            color: "grey",
+            margin: "-10px 0 0 -8px",
+            fontSize: "0.9rem"
+        },
+        "& .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline": {
+            border: "unset",
+            borderRadius: "unset",
+        }
+
+    }
+});
+
 const Fund = ({ setShowModal }) => {
+
+    const classes = useStyles();
 
     // const theme = useTheme();
 
@@ -42,7 +68,7 @@ const Fund = ({ setShowModal }) => {
     // const navigate = useNavigate();
 
     const [user, setUser] = useState({
-        team: "", date: "", toss: "", result: "", cost: "", opponent_score: "", opponent_over: "", annihilators_score: "", annihilators_over: ""
+        teamName: "", date: "", tossResult: "", matchResult: "", matchCost: "", opponentScore: "", opponentOver: "", annihilatorScore: "", annihilatorOver: ""
     });
 
     let name, value;
@@ -98,11 +124,11 @@ const Fund = ({ setShowModal }) => {
 
                         <form method="POST" className="register-form" id="register-form">
                             <div className="form-group">
-                                <label htmlFor="team">
+                                <label htmlFor="teamName">
                                     <AiOutlineTeam />
                                 </label>
-                                <input type="text" name="team" id="team" autoComplete="off"
-                                    value={user.team}
+                                <input type="text" name="teamName" id="teamName" autoComplete="off"
+                                    value={user.teamName}
                                     onChange={handleInputs}
                                     placeholder="Team Name" />
                             </div>
@@ -116,76 +142,85 @@ const Fund = ({ setShowModal }) => {
                                     placeholder="Date" />
                             </div>
                             <div className="form-group">
-                                <label htmlFor="toss">
+                                <label htmlFor="tossResult">
                                     <GiCoinflip />
                                 </label>
-                                <FormControl fullWidth className='dropown-label'>
-                                    <InputLabel id="demo-simple-select-label">Age</InputLabel>
-                                    <Select
-                                        border="none"
-                                        labelId="demo-simple-select-label"
-                                        id="demo-simple-select"
-                                        value={user.toss}
-                                        label="Toss Result"
-                                        onChange={handleInputs}
-                                    >
-                                        <MenuItem value={10}>Ten</MenuItem>
-                                        <MenuItem value={20}>Twenty</MenuItem>
-                                        <MenuItem value={30}>Thirty</MenuItem>
-                                    </Select>
-                                </FormControl>
+                                <TextField
+                                    className={classes.root}
+                                    value={user.tossResult}
+                                    onChange={handleInputs}
+                                    variant="outlined"
+                                    label="Toss Result"
+                                    select
+                                >
+                                    <MenuItem value="">
+                                        <em>None</em>
+                                    </MenuItem>
+                                    <MenuItem value="Win">Win</MenuItem>
+                                    <MenuItem value="Lose">Lose</MenuItem>
+                                </TextField>
                             </div>
                             <div className="form-group">
-                                <label htmlFor="result">
+                                <label htmlFor="matchResult">
                                     <MdSportsCricket />
                                 </label>
-                                <input type="text" name="result" id="result" autoComplete="off"
-                                    value={user.result}
+                                <TextField
+                                    className={classes.root}
+                                    value={user.matchResult}
                                     onChange={handleInputs}
-                                    placeholder="Match Result" />
+                                    variant="outlined"
+                                    label="Match Result"
+                                    select
+                                >
+                                    <MenuItem value="">
+                                        <em>None</em>
+                                    </MenuItem>
+                                    <MenuItem value="Win">Win</MenuItem>
+                                    <MenuItem value="Lose">Lose</MenuItem>
+                                </TextField>
                             </div>
                             <div className="form-group">
-                                <label htmlFor="cost">
+                                <label htmlFor="matchCost">
                                     <BiRupee />
                                 </label>
-                                <input type="number" name="cost" id="cost" autoComplete="off"
-                                    value={user.cost}
+                                <input type="number" name="matchCost" id="matchCost" autoComplete="off"
+                                    value={user.matchCost}
                                     onChange={handleInputs}
                                     placeholder="Match Cost" />
                             </div>
                             <div className="form-group">
-                                <label htmlFor="opponent_score">
+                                <label htmlFor="opponentScore">
                                     <GrScorecard />
                                 </label>
-                                <input type="text" name="opponent_score" id="opponent_score" autoComplete="off"
-                                    value={user.opponent_score}
+                                <input type="text" name="opponentScore" id="opponentScore" autoComplete="off"
+                                    value={user.opponentScore}
                                     onChange={handleInputs}
                                     placeholder="Opponent's Score" />
                             </div>
                             <div className="form-group">
-                                <label htmlFor="opponent_over">
+                                <label htmlFor="opponentOver">
                                     <IoTennisball />
                                 </label>
-                                <input type="number" name="opponent_over" id="opponent_over" autoComplete="off"
-                                    value={user.opponent_over}
+                                <input type="number" name="opponentOver" id="opponentOver" autoComplete="off"
+                                    value={user.opponentOver}
                                     onChange={handleInputs}
                                     placeholder="Opponent's Over" />
                             </div>
                             <div className="form-group">
-                                <label htmlFor="annihilators_score">
+                                <label htmlFor="annihilatorScore">
                                     <GrScorecard />
                                 </label>
-                                <input type="text" name="annihilators_score" id="annihilators_score" autoComplete="off"
-                                    value={user.annihilators_score}
+                                <input type="text" name="annihilatorScore" id="annihilatorScore" autoComplete="off"
+                                    value={user.annihilatorScore}
                                     onChange={handleInputs}
                                     placeholder="Annihilator's Score" />
                             </div>
                             <div className="form-group">
-                                <label htmlFor="annihilators_over">
+                                <label htmlFor="annihilatorOver">
                                     <IoTennisballOutline />
                                 </label>
-                                <input type="number" name="annihilators_over" id="annihilators_over" autoComplete="off"
-                                    value={user.annihilators_over}
+                                <input type="number" name="annihilatorOver" id="annihilatorOver" autoComplete="off"
+                                    value={user.annihilatorOver}
                                     onChange={handleInputs}
                                     placeholder="Annihilator's over" />
                             </div>
