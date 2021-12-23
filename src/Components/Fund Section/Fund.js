@@ -18,7 +18,7 @@ import "./fund.css"
 const useStyles = makeStyles({
     root: {
 
-        "min-width": 260,
+        "min-width": 200,
         "& .MuiOutlinedInput-input": {
             display: "flex",
             alignItems: "center",
@@ -27,6 +27,7 @@ const useStyles = makeStyles({
             padding: "0px",
             height: "40px",
             paddingLeft: "10px",
+            fontSize: "0.9rem"
         },
         "& .MuiInputLabel-root": {
             color: "grey",
@@ -151,11 +152,9 @@ const Fund = ({ setShowModal }) => {
                                     onChange={handleInputs}
                                     variant="outlined"
                                     label="Toss Result"
+                                    name="tossResult"
                                     select
                                 >
-                                    <MenuItem value="">
-                                        <em>None</em>
-                                    </MenuItem>
                                     <MenuItem value="Win">Win</MenuItem>
                                     <MenuItem value="Lose">Lose</MenuItem>
                                 </TextField>
@@ -170,11 +169,9 @@ const Fund = ({ setShowModal }) => {
                                     onChange={handleInputs}
                                     variant="outlined"
                                     label="Match Result"
+                                    name="matchResult"
                                     select
                                 >
-                                    <MenuItem value="">
-                                        <em>None</em>
-                                    </MenuItem>
                                     <MenuItem value="Win">Win</MenuItem>
                                     <MenuItem value="Lose">Lose</MenuItem>
                                 </TextField>
