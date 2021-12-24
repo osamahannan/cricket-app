@@ -13,6 +13,9 @@
   transition: 0.3s all ease;
 }
 
+.button {
+  display: flex;
+}
 /* Header Section*/
 
 .header {
@@ -283,6 +286,10 @@
   border-radius: 5px;
   cursor: pointer;
   font-size: 17px;
+}
+
+.edit-mom {
+  margin-left: 1rem;
 }
 
 /* Match Result Section */
@@ -849,7 +856,9 @@
 }
 
 .cancel {
-  margin-right: 3rem;
+  /* margin-right: 3rem;
+  margin-left: 1rem; */
+  margin: 2rem 3rem 0 1rem;
   background-color: crimson;
 }
 

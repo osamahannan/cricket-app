@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom';
 import { GiCoinflip } from "react-icons/gi";
 import { BsCalendar2Date } from "react-icons/bs";
 import { MdSportsCricket } from "react-icons/md";
@@ -43,6 +42,9 @@ const useStyles = makeStyles({
 });
 
 const Fund = ({ setShowModal }) => {
+
+    const [scoreCard, setScoreCard] = useState(false);
+    const [showMom, setShowMom] = useState(false);
 
     const classes = useStyles();
 
@@ -117,7 +119,18 @@ const Fund = ({ setShowModal }) => {
 
     return (
         <>
-            <Fade up>
+
+            {(!scoreCard && !showMom) && (
+                <div className="fund">
+                    <h1>Our fund: 3500</h1>
+                    <div className='button-section'>
+                        <button className="btn edit-score" onClick={() => setScoreCard(!scoreCard)}>Edit Score</button>
+                        <button className="btn edit-mom" onClick={() => setShowMom(!showMom)}>Edit Mom</button>
+                    </div>
+                </div>
+            )}
+
+            {scoreCard && (<Fade up>
                 <div className="register">
 
                     <div className="register-container">
@@ -225,7 +238,8 @@ const Fund = ({ setShowModal }) => {
                         </form>
 
                         <div className="button">
-                            <button type="submit" name="signup" id="signup" className="btn" value="register" >Submit</button>
+                            <button type="submit" name="signup" id="signup" className="btn" value="submit" >Submit</button>
+                            <button className="btn cancel" onClick={() => setScoreCard(!scoreCard)}>Cancel</button>
                         </div>
 
                     </div>
@@ -235,14 +249,25 @@ const Fund = ({ setShowModal }) => {
                             <figure>
                                 <img src={signpic} alt="signup-pic" className="signimage" />
                             </figure>
-                            <div className="next-link">
-                                <div>already a user ?</div>
-                                <Link to="/" className="signup-link">Log In</Link>
-                            </div>
+                            {/* <div className="Cancel-edit" onClick={() => setScoreCard(!scoreCard)}>
+                                <div className="btn">Cancel</div>
+                            </div> */}
                         </div>
                     </Fade>
                 </div>
-            </Fade>
+            </Fade>)}
+
+            {showMom && (
+
+                <div className="mom">
+                    <h1>Edit section for Man of the Match</h1>
+                    <div className="button-section">
+                        <button className='btn'>Submit</button>
+                        <button className="btn cancel" onClick={() => setShowMom(!showMom)}>Cancel</button>
+                    </div>
+                </div>
+
+            )}
 
             {/* <ToastContainer /> */}
         </>
