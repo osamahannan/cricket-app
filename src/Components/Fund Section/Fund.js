@@ -325,7 +325,7 @@ const Fund = ({ setShowModal }) => {
                                                 <IoTennisballOutline />
                                             </label>
                                             <input type="number" name="ballPlayed" id="ballPlayed" autoComplete="off"
-                                                value={user.opponentOver}
+                                                value={user.ballPlayed}
                                                 onChange={handleInputs}
                                                 placeholder="Balls Played" />
                                         </div>
