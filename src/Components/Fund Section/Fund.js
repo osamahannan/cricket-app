@@ -7,6 +7,12 @@ import { IoTennisball } from "react-icons/io5";
 import { IoTennisballOutline } from "react-icons/io5";
 import { BiRupee } from "react-icons/bi";
 import { GrScorecard } from "react-icons/gr";
+import { IoPersonOutline } from "react-icons/io5";
+import { MdOutlineCategory } from "react-icons/md";
+import { MdOutlineSportsCricket } from "react-icons/md";
+import { FaDiceSix } from "react-icons/fa";
+import { FaDiceFour } from "react-icons/fa";
+import { GiCannonBall } from "react-icons/gi";
 import TextField from "@material-ui/core/TextField";
 import MenuItem from "@material-ui/core/MenuItem";
 import { makeStyles } from "@material-ui/core/styles";
@@ -71,7 +77,7 @@ const Fund = ({ setShowModal }) => {
     // const navigate = useNavigate();
 
     const [user, setUser] = useState({
-        teamName: "", date: "", tossResult: "", matchResult: "", matchCost: "", opponentScore: "", opponentOver: "", annihilatorScore: "", annihilatorOver: ""
+        teamName: "", date: "", tossResult: "", matchResult: "", matchCost: "", opponentScore: "", opponentOver: "", annihilatorScore: "", annihilatorOver: "", playerName: "", category: "", runScored: "", ballPlayed: "", sixes: "", fours: "", overBowled: "", runGiven: "", wicketTaken: "",
     });
 
     let name, value;
@@ -249,9 +255,6 @@ const Fund = ({ setShowModal }) => {
                             <figure>
                                 <img src={signpic} alt="signup-pic" className="signimage" />
                             </figure>
-                            {/* <div className="Cancel-edit" onClick={() => setScoreCard(!scoreCard)}>
-                                <div className="btn">Cancel</div>
-                            </div> */}
                         </div>
                     </Fade>
                 </div>
@@ -259,12 +262,114 @@ const Fund = ({ setShowModal }) => {
 
             {showMom && (
 
-                <div className="mom">
-                    <h1>Edit section for Man of the Match</h1>
-                    <div className="button-section">
-                        <button className='btn'>Submit</button>
-                        <button className="btn cancel" onClick={() => setShowMom(!showMom)}>Cancel</button>
+                <div className="register" id="mom">
+
+                    <div className="register-container" id='mom-container'>
+                        <h1>MOM Card</h1>
+
+                        <form method="POST" className="register-form" id="register-form">
+                            <div className="form-group">
+                                <label htmlFor="playerName">
+                                    <IoPersonOutline />
+                                </label>
+                                <input type="text" name="playerName" id="playerName" autoComplete="off"
+                                    value={user.playerName}
+                                    onChange={handleInputs}
+                                    placeholder="Player Name" />
+                            </div>
+                            <div className="form-group">
+                                <label htmlFor="category">
+                                    <MdOutlineCategory />
+                                </label>
+                                <input type="text" name="category" id="category" autoComplete="off"
+                                    value={user.category}
+                                    onChange={handleInputs}
+                                    placeholder="Category" />
+                            </div>
+
+                            {(user.category === "Batting") && (
+                                <>
+                                    <div className="form-group">
+                                        <label htmlFor="runScored">
+                                            <MdOutlineSportsCricket />
+                                        </label>
+                                        <input type="number" name="runScored" id="runScored" autoComplete="off"
+                                            value={user.runScored}
+                                            onChange={handleInputs}
+                                            placeholder="Run Scored" />
+                                    </div>
+                                    <div className="form-group">
+                                        <label htmlFor="ballPlayed">
+                                            <IoTennisballOutline />
+                                        </label>
+                                        <input type="number" name="ballPlayed" id="ballPlayed" autoComplete="off"
+                                            value={user.opponentOver}
+                                            onChange={handleInputs}
+                                            placeholder="Balls Played" />
+                                    </div>
+                                    <div className="form-group">
+                                        <label htmlFor="sixes">
+                                            <FaDiceSix />
+                                        </label>
+                                        <input type="number" name="sixes" id="sixes" autoComplete="off"
+                                            value={user.sixes}
+                                            onChange={handleInputs}
+                                            placeholder="Sixes" />
+                                    </div>
+                                    <div className="form-group">
+                                        <label htmlFor="fours">
+                                            <FaDiceFour />
+                                        </label>
+                                        <input type="number" name="fours" id="fours" autoComplete="off"
+                                            value={user.fours}
+                                            onChange={handleInputs}
+                                            placeholder="Fours" />
+                                    </div>
+                                </>
+                            )}
+
+                            {(user.category === "Bowling") && (
+                                <>
+                                    <div className="form-group">
+                                        <label htmlFor="overBowled">
+                                            <IoTennisball />
+                                        </label>
+                                        <input type="number" name="overBowled" id="overBowled" autoComplete="off"
+                                            value={user.overBowled}
+                                            onChange={handleInputs}
+                                            placeholder="Over" />
+                                    </div>
+                                    <div className="form-group">
+                                        <label htmlFor="runGiven">
+                                            <GrScorecard />
+                                        </label>
+                                        <input type="number" name="runGiven" id="runGiven" autoComplete="off"
+                                            value={user.runGiven}
+                                            onChange={handleInputs}
+                                            placeholder="Run" />
+                                    </div>
+                                    <div className="form-group">
+                                        <label htmlFor="wicketTaken">
+                                            <GiCannonBall />
+                                        </label>
+                                        <input type="number" name="wicketTaken" id="wicketTaken" autoComplete="off"
+                                            value={user.wicketTaken}
+                                            onChange={handleInputs}
+                                            placeholder="Wicket" />
+                                    </div>
+
+                                </>
+                            )}
+
+                        </form>
+
+                        <div className="button">
+                            <button type="submit" name="signup" id="signup" className="btn" value="submit" >Submit</button>
+                            <button className="btn cancel" onClick={() => setShowMom(!showMom)}>Cancel</button>
+                        </div>
+
                     </div>
+
                 </div>
 
             )}

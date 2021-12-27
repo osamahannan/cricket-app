@@ -36,9 +36,9 @@ const Modal = ({ setShowModal, playerData }) => {
                                 <h4>{playerData.speciality}</h4>
                                 <p>RANKING: <span>1/10</span></p>
                             </div>
-                            <div onClick={() => setShowModal(false)}>
-                                <button className="btn cancel">Cancel</button>
-                            </div>
+
+                            <button onClick={() => setShowModal(false)} className="btn cancel">Cancel</button>
+
                         </div>
 
                         <div className="timeline-container">

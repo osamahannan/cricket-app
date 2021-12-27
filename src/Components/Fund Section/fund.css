@@ -3,17 +3,34 @@
   justify-content: space-evenly;
   align-items: center;
   width: 54vw;
-  height: 670px;
+  height: 700px;
   margin: 4rem auto;
   background-color: rgb(250 253 253);
   border-radius: 16px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+#mom {
+  background: url("./cricketcup.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: unset;
+  height: unset;
+}
+
 .register-container {
   display: flex;
   flex-direction: column;
   padding: 20px;
+}
+
+#mom-container {
+  padding: 2rem;
+}
+
+#mom-container h1 {
+  color: white;
 }
 
 .register-container h1 {
@@ -124,6 +141,10 @@
     flex-direction: column;
     height: 900px;
     margin: 40px auto;
+  }
+
+  #mom {
+    align-items: unset;
   }
 
   .form-group input {

@@ -761,21 +761,17 @@
 
 /* Fund Section */
 
-.parent-fund {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
 .fund {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 40vw;
-  height: 20vw;
-  background-color: aqua;
   margin: 1rem;
+  padding: 1rem;
+}
+
+.button-section {
+  display: flex;
 }
 
 /* Scroll Button */
@@ -856,8 +852,6 @@
 }
 
 .cancel {
-  /* margin-right: 3rem;
-  margin-left: 1rem; */
   margin: 2rem 3rem 0 1rem;
   background-color: crimson;
 }
@@ -1203,6 +1197,10 @@
     padding: 5px 10px;
   }
 
+  .cancel {
+    padding: 10px 25px;
+  }
+
   .match-container {
     margin: 30px 0;
   }
@@ -1348,6 +1346,11 @@
   .btn {
     font-size: 13px;
     margin-top: 1rem;
+  }
+
+  .cancel {
+    /* font-size: 1.2rem; */
+    padding: 10px 25px;
   }
 
   .bat-ball {
