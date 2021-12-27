@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { Players } from "../Players";
 import { GiCoinflip } from "react-icons/gi";
 import { BsCalendar2Date } from "react-icons/bs";
 import { MdSportsCricket } from "react-icons/md";
@@ -128,7 +129,7 @@ const Fund = ({ setShowModal }) => {
 
             {(!scoreCard && !showMom) && (
                 <div className="fund">
-                    <h1>Our fund: 3500</h1>
+                    <h1>Our fund: 3945</h1>
                     <div className='button-section'>
                         <button className="btn edit-score" onClick={() => setScoreCard(!scoreCard)}>Edit Score</button>
                         <button className="btn edit-mom" onClick={() => setShowMom(!showMom)}>Edit Mom</button>
@@ -262,115 +263,137 @@ const Fund = ({ setShowModal }) => {
 
             {showMom && (
 
-                <div className="register" id="mom">
+                <Fade up>
+                    <div className="register" id="mom">
 
-                    <div className="register-container" id='mom-container'>
-                        <h1>MOM Card</h1>
+                        <div className="register-container" id='mom-container'>
+                            <h1>MOM Card</h1>
 
-                        <form method="POST" className="register-form" id="register-form">
-                            <div className="form-group">
-                                <label htmlFor="playerName">
-                                    <IoPersonOutline />
-                                </label>
-                                <input type="text" name="playerName" id="playerName" autoComplete="off"
-                                    value={user.playerName}
-                                    onChange={handleInputs}
-                                    placeholder="Player Name" />
+                            <form method="POST" className="register-form" id="register-form">
+                                <div className="form-group">
+                                    <label htmlFor="playerName">
+                                        <IoPersonOutline />
+                                    </label>
+                                    <TextField
+                                        className={classes.root}
+                                        value={user.playerName}
+                                        onChange={handleInputs}
+                                        variant="outlined"
+                                        label="Player Name"
+                                        name="playerName"
+                                        select
+                                    >
+
+                                        {Players.map((player) => {
+                                            return (
+                                                <MenuItem value={player.name}>{player.name}</MenuItem>
+                                            )
+                                        })}
+                                    </TextField>
+                                </div>
+                                <div className="form-group">
+                                    <label htmlFor="category">
+                                        <MdOutlineCategory />
+                                    </label>
+                                    <TextField
+                                        className={classes.root}
+                                        value={user.category}
+                                        onChange={handleInputs}
+                                        variant="outlined"
+                                        label="Category"
+                                        name="category"
+                                        select
+                                    >
+                                        <MenuItem value="Batting">Batting</MenuItem>
+                                        <MenuItem value="Bowling">Bowling</MenuItem>
+                                    </TextField>
+                                </div>
+
+                                {(user.category === "Batting") && (
+                                    <>
+                                        <div className="form-group">
+                                            <label htmlFor="runScored">
+                                                <MdOutlineSportsCricket />
+                                            </label>
+                                            <input type="number" name="runScored" id="runScored" autoComplete="off"
+                                                value={user.runScored}
+                                                onChange={handleInputs}
+                                                placeholder="Run Scored" />
+                                        </div>
+                                        <div className="form-group">
+                                            <label htmlFor="ballPlayed">
+                                                <IoTennisballOutline />
+                                            </label>
+                                            <input type="number" name="ballPlayed" id="ballPlayed" autoComplete="off"
+                                                value={user.opponentOver}
+                                                onChange={handleInputs}
+                                                placeholder="Balls Played" />
+                                        </div>
+                                        <div className="form-group">
+                                            <label htmlFor="sixes">
+                                                <FaDiceSix />
+                                            </label>
+                                            <input type="number" name="sixes" id="sixes" autoComplete="off"
+                                                value={user.sixes}
+                                                onChange={handleInputs}
+                                                placeholder="Sixes" />
+                                        </div>
+                                        <div className="form-group">
+                                            <label htmlFor="fours">
+                                                <FaDiceFour />
+                                            </label>
+                                            <input type="number" name="fours" id="fours" autoComplete="off"
+                                                value={user.fours}
+                                                onChange={handleInputs}
+                                                placeholder="Fours" />
+                                        </div>
+                                    </>
+                                )}
+
+                                {(user.category === "Bowling") && (
+                                    <>
+                                        <div className="form-group">
+                                            <label htmlFor="overBowled">
+                                                <IoTennisball />
+                                            </label>
+                                            <input type="number" name="overBowled" id="overBowled" autoComplete="off"
+                                                value={user.overBowled}
+                                                onChange={handleInputs}
+                                                placeholder="Over" />
+                                        </div>
+                                        <div className="form-group">
+                                            <label htmlFor="runGiven">
+                                                <GrScorecard />
+                                            </label>
+                                            <input type="number" name="runGiven" id="runGiven" autoComplete="off"
+                                                value={user.runGiven}
+                                                onChange={handleInputs}
+                                                placeholder="Run" />
+                                        </div>
+                                        <div className="form-group">
+                                            <label htmlFor="wicketTaken">
+                                                <GiCannonBall />
+                                            </label>
+                                            <input type="number" name="wicketTaken" id="wicketTaken" autoComplete="off"
+                                                value={user.wicketTaken}
+                                                onChange={handleInputs}
+                                                placeholder="Wicket" />
+                                        </div>
+
+                                    </>
+                                )}
+
+                            </form>
+
+                            <div className="button">
+                                <button type="submit" name="signup" id="signup" className="btn" value="submit" >Submit</button>
+                                <button className="btn cancel" onClick={() => setShowMom(!showMom)}>Cancel</button>
                             </div>
-                            <div className="form-group">
-                                <label htmlFor="category">
-                                    <MdOutlineCategory />
-                                </label>
-                                <input type="text" name="category" id="category" autoComplete="off"
-                                    value={user.category}
-                                    onChange={handleInputs}
-                                    placeholder="Category" />
-                            </div>
 
-                            {(user.category === "Batting") && (
-                                <>
-                                    <div className="form-group">
-                                        <label htmlFor="runScored">
-                                            <MdOutlineSportsCricket />
-                                        </label>
-                                        <input type="number" name="runScored" id="runScored" autoComplete="off"
-                                            value={user.runScored}
-                                            onChange={handleInputs}
-                                            placeholder="Run Scored" />
-                                    </div>
-                                    <div className="form-group">
-                                        <label htmlFor="ballPlayed">
-                                            <IoTennisballOutline />
-                                        </label>
-                                        <input type="number" name="ballPlayed" id="ballPlayed" autoComplete="off"
-                                            value={user.opponentOver}
-                                            onChange={handleInputs}
-                                            placeholder="Balls Played" />
-                                    </div>
-                                    <div className="form-group">
-                                        <label htmlFor="sixes">
-                                            <FaDiceSix />
-                                        </label>
-                                        <input type="number" name="sixes" id="sixes" autoComplete="off"
-                                            value={user.sixes}
-                                            onChange={handleInputs}
-                                            placeholder="Sixes" />
-                                    </div>
-                                    <div className="form-group">
-                                        <label htmlFor="fours">
-                                            <FaDiceFour />
-                                        </label>
-                                        <input type="number" name="fours" id="fours" autoComplete="off"
-                                            value={user.fours}
-                                            onChange={handleInputs}
-                                            placeholder="Fours" />
-                                    </div>
-                                </>
-                            )}
-
-                            {(user.category === "Bowling") && (
-                                <>
-                                    <div className="form-group">
-                                        <label htmlFor="overBowled">
-                                            <IoTennisball />
-                                        </label>
-                                        <input type="number" name="overBowled" id="overBowled" autoComplete="off"
-                                            value={user.overBowled}
-                                            onChange={handleInputs}
-                                            placeholder="Over" />
-                                    </div>
-                                    <div className="form-group">
-                                        <label htmlFor="runGiven">
-                                            <GrScorecard />
-                                        </label>
-                                        <input type="number" name="runGiven" id="runGiven" autoComplete="off"
-                                            value={user.runGiven}
-                                            onChange={handleInputs}
-                                            placeholder="Run" />
-                                    </div>
-                                    <div className="form-group">
-                                        <label htmlFor="wicketTaken">
-                                            <GiCannonBall />
-                                        </label>
-                                        <input type="number" name="wicketTaken" id="wicketTaken" autoComplete="off"
-                                            value={user.wicketTaken}
-                                            onChange={handleInputs}
-                                            placeholder="Wicket" />
-                                    </div>
-
-                                </>
-                            )}
-
-                        </form>
-
-                        <div className="button">
-                            <button type="submit" name="signup" id="signup" className="btn" value="submit" >Submit</button>
-                            <button className="btn cancel" onClick={() => setShowMom(!showMom)}>Cancel</button>
                         </div>
 
                     </div>
-
-                </div>
+                </Fade>
 
             )}
 
