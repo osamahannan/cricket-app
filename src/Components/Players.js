@@ -124,7 +124,7 @@ export const Players = [
     {
         id: 12,
         name: "Sajid Khan",
-        image: "Assets/Profile pics/sajid.svg",
+        image: "Assets/Profile pics/sajid2.svg",
         speciality: "Batsman",
         instagram: "https://instagram.com/mr_sid7786?utm_medium=copy_link",
         facebook: "https://www.facebook.com/shaina.khatoon.1428",
