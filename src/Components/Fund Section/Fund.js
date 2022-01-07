@@ -55,22 +55,6 @@ const Fund = ({ setShowModal }) => {
 
     const classes = useStyles();
 
-    // const theme = useTheme();
-
-    // const styles = theme => ({
-    //     select: {
-    //         '&:before': {
-    //             borderColor: "red",
-    //         },
-    //         '&:after': {
-    //             borderColor: "black",
-    //         }
-    //     },
-    //     icon: {
-    //         fill: "yellow",
-    //     },
-    // });
-
     useEffect(() => {
         setShowModal(false);
     }, [setShowModal])
@@ -88,41 +72,44 @@ const Fund = ({ setShowModal }) => {
         setUser({ ...user, [name]: value })
     }
 
-    // const PostData = async (e) => {
-    //     e.preventDefault();
+    const PostData = async (e) => {
+        e.preventDefault();
 
-    //     const { name, email, phone, work, password, cpassword } = user;
+        const { teamName, date, tossResult, matchResult, matchCost, opponentScore, opponentOver, annihilatorScore, annihilatorOver, playerName, category, runScored, ballPlayed, sixes, fours, overBowled, runGiven, wicketTaken } = user;
 
-    //     const res = await fetch("/register", {
-    //         method: "POST",
-    //         headers: {
-    //             "Content-Type": "application/json"
-    //         },
-    //         body: JSON.stringify({
-    //             name, email, phone, work, password, cpassword
-    //         })
-    //     });
+        const res = await fetch("http://localhost:5000/api/v1/create-match/", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                teamName, date, tossResult, matchResult, matchCost, opponentScore, opponentOver, annihilatorScore, annihilatorOver, playerName, category, runScored, ballPlayed, sixes, fours, overBowled, runGiven, wicketTaken
+            })
+        });
 
-    //     const data = await res.json();
-    //     if (res.status === 409 || !data) {
-    //         toast.error("Email already exists", {
-    //             position:"top-center"
-    //         });
-    //     } 
-    //     else if(res.status === 422 || !data) {
-    //         toast.error("Please fill all the details", {
-    //             position:"top-center"
-    //         });
-    //     } else {
-    //         toast.success("Registration Successful", {
-    //             position:"top-center",
-    //             autoClose: 2000
-    //         });
-    //         setTimeout(() => {
-    //             history.push('/login');
-    //         }, 2000);
-    //     }
-    // }
+        const data = await res.json();
+        if (res.status === 409 || !data) {
+            // toast.error("Email already exists", {
+            //     position: "top-center"
+            // });
+            console.log("error")
+        }
+        else if (res.status === 422 || !data) {
+            // toast.error("Please fill all the details", {
+            //     position: "top-center"
+            // });
+            console.log("error")
+        } else {
+            // toast.success("Registration Successful", {
+            //     position: "top-center",
+            //     autoClose: 2000
+            // });
+            console.log("detail submitted successfully");
+            // setTimeout(() => {
+            //     history.push('/login');
+            // }, 2000);
+        }
+    }
 
     return (
         <>
@@ -131,8 +118,8 @@ const Fund = ({ setShowModal }) => {
                 <div className="fund">
                     <h1>Our fund: 3945</h1>
                     <div className='button-section'>
-                        <button className="btn edit-score" onClick={() => setScoreCard(!scoreCard)}>Edit Score</button>
-                        <button className="btn edit-mom" onClick={() => setShowMom(!showMom)}>Edit Mom</button>
+                        <button className="btn edit-score" onClick={() => setScoreCard(!scoreCard)}>Update Score</button>
+                        <button className="btn edit-mom" onClick={() => setShowMom(!showMom)}>Update Mom</button>
                     </div>
                 </div>
             )}
@@ -245,7 +232,7 @@ const Fund = ({ setShowModal }) => {
                         </form>
 
                         <div className="button">
-                            <button type="submit" name="signup" id="signup" className="btn" value="submit" >Submit</button>
+                            <button type="submit" name="signup" id="signup" className="btn" value="submit" onClick={PostData}>Submit</button>
                             <button className="btn cancel" onClick={() => setScoreCard(!scoreCard)}>Cancel</button>
                         </div>
 
