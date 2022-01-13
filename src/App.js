@@ -4,7 +4,6 @@ import Navbar from "./Components/Navbar";
 import Home from "./Components/Home";
 import Fund from "./Components/Fund Section/Fund";
 import Team from "./Components/Team";
-import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import ScrollToTop from "./Components/ScrollToTop";
 import ScrollButton from "./Components/ScrollButton";
@@ -20,8 +19,6 @@ function App() {
       <Router>
 
         <ScrollToTop />
-
-        <Header showModal={showModal} />
 
         <Navbar showLink={activeLink} setShowLink={setActiveLink} showModal={showModal} />
 
