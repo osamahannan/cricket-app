@@ -77,7 +77,7 @@ const Fund = ({ setShowModal }) => {
 
         const { teamName, date, tossResult, matchResult, matchCost, opponentScore, opponentOver, annihilatorScore, annihilatorOver, playerName, category, runScored, ballPlayed, sixes, fours, overBowled, runGiven, wicketTaken } = user;
 
-        const res = await fetch("http://localhost:5000/api/v1/create-match/", {
+        const res = await fetch("http://localhost:5000/submit", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
