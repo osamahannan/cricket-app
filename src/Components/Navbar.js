@@ -18,8 +18,6 @@ const Navbar = ({ showModal }) => {
         });
     };
 
-    console.log(showLink);
-
     return (
         <nav className={showModal ? "navbar active-blur" : "navbar"} >
             <div className="logo">
