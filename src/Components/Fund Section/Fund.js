@@ -77,7 +77,7 @@ const Fund = ({ setShowModal }) => {
 
         const { teamName, date, tossResult, matchResult, matchCost, opponentScore, opponentOver, annihilatorScore, annihilatorOver, playerName, category, runScored, ballPlayed, sixes, fours, overBowled, runGiven, wicketTaken } = user;
 
-        const res = await fetch("/submit", {
+        const res = await fetch("https://cricket-annihilators.herokuapp.com/submit", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
