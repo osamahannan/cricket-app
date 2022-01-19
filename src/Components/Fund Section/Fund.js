@@ -79,6 +79,7 @@ const Fund = ({ setShowModal }) => {
 
         const res = await fetch("https://cricket-annihilators.herokuapp.com/submit", {
             method: "POST",
+            mode: "no-cors",
             headers: {
                 "Content-Type": "application/json"
             },
